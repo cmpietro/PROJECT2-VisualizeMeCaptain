@@ -1,0 +1,765 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 175,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#\n",
+    "# FBI Crime Data API\n",
+    "#\n",
+    "\n",
+    "# Dependencies and Setup\n",
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import requests\n",
+    "import time\n",
+    "import json\n",
+    "import csv\n",
+    "\n",
+    "%matplotlib inline\n",
+    "import matplotlib.pyplot as plt\n",
+    "\n",
+    "import os\n",
+    "import datetime\n",
+    "\n",
+    "# Import API key\n",
+    "from api_keys import api_key"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 176,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'ui_type': 'text',\n",
+       " 'noun': 'offense',\n",
+       " 'category': None,\n",
+       " 'title': 'Offense Count',\n",
+       " 'short_title': None,\n",
+       " 'ui_restriction': None,\n",
+       " 'keys': ['Incident Count', 'Offense Count'],\n",
+       " 'data': [{'value': 32,\n",
+       "   'data_year': 1998,\n",
+       "   'month_num': 0,\n",
+       "   'key': 'Incident Count'},\n",
+       "  {'value': 68, 'data_year': 1999, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 122, 'data_year': 2000, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 228, 'data_year': 2001, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 326, 'data_year': 2002, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 328, 'data_year': 2003, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 636, 'data_year': 2004, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 862, 'data_year': 2005, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 764, 'data_year': 2006, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 762, 'data_year': 2007, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 718, 'data_year': 2008, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 744, 'data_year': 2009, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 383, 'data_year': 2010, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 384, 'data_year': 2011, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 346, 'data_year': 2012, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 364, 'data_year': 2013, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 360, 'data_year': 2014, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 403, 'data_year': 2015, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 514, 'data_year': 2016, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 584, 'data_year': 2017, 'month_num': 0, 'key': 'Incident Count'},\n",
+       "  {'value': 33, 'data_year': 1998, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 73, 'data_year': 1999, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 126, 'data_year': 2000, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 244, 'data_year': 2001, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 358, 'data_year': 2002, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 342, 'data_year': 2003, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 678, 'data_year': 2004, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 920, 'data_year': 2005, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 826, 'data_year': 2006, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 824, 'data_year': 2007, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 782, 'data_year': 2008, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 826, 'data_year': 2009, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 412, 'data_year': 2010, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 400, 'data_year': 2011, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 380, 'data_year': 2012, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 391, 'data_year': 2013, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 380, 'data_year': 2014, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 432, 'data_year': 2015, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 562, 'data_year': 2016, 'month_num': 0, 'key': 'Offense Count'},\n",
+       "  {'value': 641, 'data_year': 2017, 'month_num': 0, 'key': 'Offense Count'}],\n",
+       " 'precise_data': []}"
+      ]
+     },
+     "execution_count": 176,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# api auto-generated at https://crime-data-explorer.fr.cloud.gov/api\n",
+    "\n",
+    "# fbi_json = requests.get(f\"https://api.usa.gov/crime/fbi/sapi/api/nibrs/homicide/offense/states/OH/count?API_KEY=iiHnOKfno2Mgkt5AynpvPpUQTEyxE77jo1RU8PIv\").json()\n",
+    "# fbi_json['results'][0]\n",
+    "\n",
+    "fbi_json = requests.get(f\"https://api.usa.gov/crime/fbi/sapi/api/nibrs/homicide/offense/states/OH/count?API_KEY=iiHnOKfno2Mgkt5AynpvPpUQTEyxE77jo1RU8PIv\").json()\n",
+    "fbi_json\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 177,
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "value\n",
+      "data_year\n",
+      "month_num\n",
+      "key\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "['value', 'data_year', 'month_num', 'key']"
+      ]
+     },
+     "execution_count": 177,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# fbi_json = requests.get(f\"https://api.usa.gov/crime/fbi/sapi/api/data/arrest/states/offense/OH/all/2010/2010?API_KEY=qjxuYoCo1z10Fvy60mTLHOcftyK9sxevJw14QbvI\").json()\n",
+    "# fbi_json['results'][0]\n",
+    "\n",
+    "fbi_offense = []\n",
+    "\n",
+    "for key in fbi_json['data'][0]:\n",
+    "    print(key)\n",
+    "\n",
+    "    fbi_offense.append(key)\n",
+    "    \n",
+    "fbi_offense\n",
+    "    \n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 178,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "4"
+      ]
+     },
+     "execution_count": 178,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    " len(fbi_offense)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 179,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>state_abbr</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>AK</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>AL</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>AR</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>AZ</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>CA</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "  state_abbr\n",
+       "0         AK\n",
+       "1         AL\n",
+       "2         AR\n",
+       "3         AZ\n",
+       "4         CA"
+      ]
+     },
+     "execution_count": 179,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#import csv files\n",
+    "#read as DF\n",
+    "state_csv = \"state_abbr.csv\"\n",
+    "\n",
+    "state_abbr = pd.read_csv(state_csv, encoding=\"utf-8\")\n",
+    "state_abbr.head()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 184,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "data type 'geeks' not understood",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\pandas\\core\\dtypes\\common.py\u001b[0m in \u001b[0;36mpandas_dtype\u001b[1;34m(dtype)\u001b[0m\n\u001b[0;32m   2010\u001b[0m     \u001b[1;32mtry\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m-> 2011\u001b[1;33m         \u001b[0mnpdtype\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mnp\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mdtype\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mdtype\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m   2012\u001b[0m     \u001b[1;32mexcept\u001b[0m \u001b[0mException\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mTypeError\u001b[0m: data type \"geeks\" not understood",
+      "\nDuring handling of the above exception, another exception occurred:\n",
+      "\u001b[1;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-184-707da61144b7>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[1;32m----> 1\u001b[1;33m \u001b[0mstates\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mstate_abbr\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mastype\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mstr\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\pandas\\core\\generic.py\u001b[0m in \u001b[0;36mastype\u001b[1;34m(self, dtype, copy, errors, **kwargs)\u001b[0m\n\u001b[0;32m   5689\u001b[0m             \u001b[1;31m# else, only a single dtype is given\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   5690\u001b[0m             new_data = self._data.astype(dtype=dtype, copy=copy, errors=errors,\n\u001b[1;32m-> 5691\u001b[1;33m                                          **kwargs)\n\u001b[0m\u001b[0;32m   5692\u001b[0m             \u001b[1;32mreturn\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0m_constructor\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mnew_data\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0m__finalize__\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   5693\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\pandas\\core\\internals\\managers.py\u001b[0m in \u001b[0;36mastype\u001b[1;34m(self, dtype, **kwargs)\u001b[0m\n\u001b[0;32m    529\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    530\u001b[0m     \u001b[1;32mdef\u001b[0m \u001b[0mastype\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mdtype\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;33m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 531\u001b[1;33m         \u001b[1;32mreturn\u001b[0m \u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mapply\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m'astype'\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mdtype\u001b[0m\u001b[1;33m=\u001b[0m\u001b[0mdtype\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;33m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    532\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    533\u001b[0m     \u001b[1;32mdef\u001b[0m \u001b[0mconvert\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;33m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\pandas\\core\\internals\\managers.py\u001b[0m in \u001b[0;36mapply\u001b[1;34m(self, f, axes, filter, do_integrity_check, consolidate, **kwargs)\u001b[0m\n\u001b[0;32m    393\u001b[0m                                             copy=align_copy)\n\u001b[0;32m    394\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 395\u001b[1;33m             \u001b[0mapplied\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mgetattr\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mb\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mf\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    396\u001b[0m             \u001b[0mresult_blocks\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0m_extend_blocks\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mapplied\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mresult_blocks\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    397\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\pandas\\core\\internals\\blocks.py\u001b[0m in \u001b[0;36mastype\u001b[1;34m(self, dtype, copy, errors, values, **kwargs)\u001b[0m\n\u001b[0;32m    532\u001b[0m     \u001b[1;32mdef\u001b[0m \u001b[0mastype\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mdtype\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mcopy\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;32mFalse\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0merrors\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;34m'raise'\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mvalues\u001b[0m\u001b[1;33m=\u001b[0m\u001b[1;32mNone\u001b[0m\u001b[1;33m,\u001b[0m \u001b[1;33m**\u001b[0m\u001b[0mkwargs\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    533\u001b[0m         return self._astype(dtype, copy=copy, errors=errors, values=values,\n\u001b[1;32m--> 534\u001b[1;33m                             **kwargs)\n\u001b[0m\u001b[0;32m    535\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    536\u001b[0m     def _astype(self, dtype, copy=False, errors='raise', values=None,\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\pandas\\core\\internals\\blocks.py\u001b[0m in \u001b[0;36m_astype\u001b[1;34m(self, dtype, copy, errors, values, **kwargs)\u001b[0m\n\u001b[0;32m    593\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    594\u001b[0m         \u001b[1;31m# convert dtypes if needed\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m--> 595\u001b[1;33m         \u001b[0mdtype\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mpandas_dtype\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mdtype\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m    596\u001b[0m         \u001b[1;31m# astype processing\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m    597\u001b[0m         \u001b[1;32mif\u001b[0m \u001b[0mis_dtype_equal\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mself\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mdtype\u001b[0m\u001b[1;33m,\u001b[0m \u001b[0mdtype\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;32m~\\Anaconda3\\lib\\site-packages\\pandas\\core\\dtypes\\common.py\u001b[0m in \u001b[0;36mpandas_dtype\u001b[1;34m(dtype)\u001b[0m\n\u001b[0;32m   2015\u001b[0m             \u001b[1;32mraise\u001b[0m \u001b[0mTypeError\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;34m\"data type not understood\"\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   2016\u001b[0m         raise TypeError(\"data type '{}' not understood\".format(\n\u001b[1;32m-> 2017\u001b[1;33m             dtype))\n\u001b[0m\u001b[0;32m   2018\u001b[0m \u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m   2019\u001b[0m     \u001b[1;31m# Any invalid dtype (such as pd.Timestamp) should raise an error.\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mTypeError\u001b[0m: data type 'geeks' not understood"
+     ]
+    }
+   ],
+   "source": [
+    "states = state_abbr.astype(str)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 185,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "KeyError",
+     "evalue": "'data'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mKeyError\u001b[0m                                  Traceback (most recent call last)",
+      "\u001b[1;32m<ipython-input-185-290880f7b441>\u001b[0m in \u001b[0;36m<module>\u001b[1;34m\u001b[0m\n\u001b[0;32m     23\u001b[0m \u001b[1;32mfor\u001b[0m \u001b[0moffense\u001b[0m \u001b[1;32min\u001b[0m \u001b[0moffenses\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     24\u001b[0m     \u001b[1;32mfor\u001b[0m \u001b[0mstate\u001b[0m \u001b[1;32min\u001b[0m \u001b[0mstates\u001b[0m\u001b[1;33m:\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[1;32m---> 25\u001b[1;33m         \u001b[0mresponse\u001b[0m \u001b[1;33m=\u001b[0m \u001b[0mrequests\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mget\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mbase_url\u001b[0m \u001b[1;33m+\u001b[0m \u001b[0moffense\u001b[0m \u001b[1;33m+\u001b[0m \u001b[0mmid_url\u001b[0m \u001b[1;33m+\u001b[0m \u001b[0mstate\u001b[0m \u001b[1;33m+\u001b[0m \u001b[0mpost_url\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mjson\u001b[0m\u001b[1;33m(\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;34m'data'\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;36m0\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0m\u001b[0;32m     26\u001b[0m         \u001b[0mstate_value\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mappend\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mstate\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n\u001b[0;32m     27\u001b[0m         \u001b[0moff_year\u001b[0m\u001b[1;33m.\u001b[0m\u001b[0mappend\u001b[0m\u001b[1;33m(\u001b[0m\u001b[0mresponse\u001b[0m\u001b[1;33m[\u001b[0m\u001b[1;34m'data_year'\u001b[0m\u001b[1;33m]\u001b[0m\u001b[1;33m)\u001b[0m\u001b[1;33m\u001b[0m\u001b[1;33m\u001b[0m\u001b[0m\n",
+      "\u001b[1;31mKeyError\u001b[0m: 'data'"
+     ]
+    }
+   ],
+   "source": [
+    "# url should look like:\n",
+    "# https://api.usa.gov/crime/fbi/sapi/api/nibrs/homicide/offense/states/OH/count?API_KEY=iiHnOKfno2Mgkt5AynpvPpUQTEyxE77jo1RU8PIvbvI\").json()\n",
+    "    \n",
+    "offenses = [\"homicide\", \"aggravated-assault\", \"burglary\", \"robbery\", \"violent-crime\"]\n",
+    "    \n",
+    "# set up lists to hold reponse info\n",
+    "# state_value = []\n",
+    "off_year = []\n",
+    "off_ct = []\n",
+    "\n",
+    "# https://api.usa.gov/crime/fbi/sapi/api/nibrs/\n",
+    "# homicide\n",
+    "# /offense/states/\n",
+    "# OH\n",
+    "# /count?API_KEY=iiHnOKfno2Mgkt5AynpvPpUQTEyxE77jo1RU8PIv\n",
+    "\n",
+    "base_url = \"https://api.usa.gov/crime/fbi/sapi/api/nibrs/\"\n",
+    "mid_url = \"/offense/states/\"\n",
+    "state = \"\"\n",
+    "post_url = \"/count?API_KEY=iiHnOKfno2Mgkt5AynpvPpUQTEyxE77jo1RU8PIv\"\n",
+    "\n",
+    "# Loop through the list of years and perform a request for data on each\n",
+    "for offense in offenses:\n",
+    "    for state in states:\n",
+    "        response = requests.get(base_url + offense + mid_url + state + post_url).json()['data'][0]\n",
+    "        state_value.append(state)\n",
+    "        off_year.append(response['data_year'])\n",
+    "        off_type.append(offense)\n",
+    "        off_ct.append(response[value])    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "states"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 85,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0"
+      ]
+     },
+     "execution_count": 85,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(off_year)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2352"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(off_type)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2352"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(off_ct)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {
+    "scrolled": false
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>State</th>\n",
+       "      <th>Offense_Year</th>\n",
+       "      <th>Offense_Type</th>\n",
+       "      <th>Offense_Count</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>OH</td>\n",
+       "      <td>2010</td>\n",
+       "      <td>aggravated_assault</td>\n",
+       "      <td>4075.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>OH</td>\n",
+       "      <td>2010</td>\n",
+       "      <td>all_other_offenses</td>\n",
+       "      <td>69074.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>OH</td>\n",
+       "      <td>2010</td>\n",
+       "      <td>arson</td>\n",
+       "      <td>232.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>OH</td>\n",
+       "      <td>2010</td>\n",
+       "      <td>burglary</td>\n",
+       "      <td>7022.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>OH</td>\n",
+       "      <td>2010</td>\n",
+       "      <td>curfew</td>\n",
+       "      <td>1336.0</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "  State  Offense_Year        Offense_Type  Offense_Count\n",
+       "0    OH          2010  aggravated_assault         4075.0\n",
+       "1    OH          2010  all_other_offenses        69074.0\n",
+       "2    OH          2010               arson          232.0\n",
+       "3    OH          2010            burglary         7022.0\n",
+       "4    OH          2010              curfew         1336.0"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# create a data frame from year, offense, and count\n",
+    "fbi_dict = {\n",
+    "    \"State\": state_value,\n",
+    "    \"Offense_Year\": off_year,\n",
+    "    \"Offense_Type\": off_type,\n",
+    "    \"Offense_Count\": off_ct\n",
+    "}\n",
+    "\n",
+    "fbi_data = pd.DataFrame(fbi_dict)\n",
+    "fbi_data.head()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "State             0\n",
+       "Offense_Year      0\n",
+       "Offense_Type      0\n",
+       "Offense_Count    48\n",
+       "dtype: int64"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "fbi_data.isna().sum()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "State            2304\n",
+       "Offense_Year     2304\n",
+       "Offense_Type     2304\n",
+       "Offense_Count    2304\n",
+       "dtype: int64"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "fbi_df = fbi_data.dropna()\n",
+    "fbi_df.count()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# check to see if there are any values that aren't whole numbers (decimals)\n",
+    "all(x.is_integer() for x in fbi_df.Offense_Count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Export file as a CSV, with the Pandas index and with the header....\n",
+    "fbi_df.to_csv(\"fbi_data_2010-2017.csv\", index=True, header=True)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>State</th>\n",
+       "      <th>Offense_Year</th>\n",
+       "      <th>Offense_Type</th>\n",
+       "      <th>Offense_Count</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>OH</td>\n",
+       "      <td>2010</td>\n",
+       "      <td>aggravated_assault</td>\n",
+       "      <td>4075.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>OH</td>\n",
+       "      <td>2010</td>\n",
+       "      <td>all_other_offenses</td>\n",
+       "      <td>69074.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>OH</td>\n",
+       "      <td>2010</td>\n",
+       "      <td>arson</td>\n",
+       "      <td>232.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>OH</td>\n",
+       "      <td>2010</td>\n",
+       "      <td>burglary</td>\n",
+       "      <td>7022.0</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>OH</td>\n",
+       "      <td>2010</td>\n",
+       "      <td>curfew</td>\n",
+       "      <td>1336.0</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "  State  Offense_Year        Offense_Type  Offense_Count\n",
+       "0    OH          2010  aggravated_assault         4075.0\n",
+       "1    OH          2010  all_other_offenses        69074.0\n",
+       "2    OH          2010               arson          232.0\n",
+       "3    OH          2010            burglary         7022.0\n",
+       "4    OH          2010              curfew         1336.0"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "fbi_df.head()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "drug_sales_synthetic\n"
+     ]
+    }
+   ],
+   "source": [
+    "# find the cell value within a column with the longest string of text\n",
+    "\n",
+    "field_length = fbi_df.Offense_Type.astype(str).map(len)\n",
+    "print(fbi_df.loc[field_length.idxmax(), 'Offense_Type'])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "array([ 2,  4, 20,  8])"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# return the max length of characters in each column\n",
+    "\n",
+    "measurer = np.vectorize(len)\n",
+    "\n",
+    "res1 = measurer(fbi_df.values.astype(str)).max(axis=0)\n",
+    "res1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
