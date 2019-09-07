@@ -1,4 +1,4 @@
-state_abbr
+states
 AK
 AL
 AR
@@ -6,11 +6,9 @@ AZ
 CA
 CO
 CT
-DC
 DE
 FL
 GA
-GM
 HI
 IA
 ID
@@ -39,7 +37,6 @@ OH
 OK
 OR
 PA
-PR
 RI
 SC
 SD
@@ -47,7 +44,6 @@ TN
 TX
 UT
 VA
-VI
 VT
 WA
 WI
