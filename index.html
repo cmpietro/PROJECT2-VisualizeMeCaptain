@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -12,4 +13,236 @@
     
   <script src="news_fetch.js"></script>
 </body>
+=======
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Visualize Me!  Gun Violence in the US</title>
+
+    <!-- Bootstrap core CSS -->  
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->  <!---  these are inspirational style  --->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    
+     <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+    <!-- Scripting links -->  <! --- Are these the ONES TO USE?  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-queue/3.0.7/d3-queue.js"></script>
+
+<!-- Leaflet JS & CSS -->  <!--- IS this all we want?  --->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+crossorigin=""></script>
+<!-- d3 JavaScript -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<!-- API key -->
+  <script type="text/javascript" src="static/js/config.js"></script>
+  
+    <!-- JS  -->
+  <script type="text/javascript" src="static/js/logic.js"></script>
+  <!-- <script type="text/javascript" src="static/js/logic2.js"></script> -->
+  <!-- <script type="text/javascript" src="static/js/logic3.js"></script> -->
+  <!-- <script type="text/javascript" src="static/js/logic4.js"></script> -->
+
+<style> </style>
+
+</head>
+<body>
+  <div class="header">
+      <h1> GUN VIOLENCE IN FOUR VIEWS</h1>
+      <p> Beth, Carol, Enzo and Ian:  Student Data Visualization Project</p>
+  </div>
+  
+   <!-- map div -->
+  <div id="map"></div>
+  
+  
+  <body id="page-top">
+
+    <!-- Navigation -->  <! --- WHERE do we want  navigation???? ---> 
+    <nav class="navbar" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+        <!--button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"-->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto" style="text-align: center;">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#fourviews">Gun Violence in Four Views</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#d3Map">Gun Violence Mapped in Four Views</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#staticviews">Static Views</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#webscraping">Current News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#conclusions">Four Conclusions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="primary text-white">
+      <section id='fourviews' class="container">
+        <div class="row">
+          <div class='col-md-3'>
+            <img class='card-img-top' src="..." alt="" color="black">
+            <div class="col-md-3">
+              <h5 class="card-title"> BETH'S VIEW</h5>
+              <p class='card-text'>"THIS IS BETH"S VIEW</p>
+              <p class='card-text'><small class='text-muted>comment </small></p>
+            </div>
+          </div>
+          <div class='card'
+            <img class="card-img-top" src="..." alt="" color="black">
+            <div class="col-md-3">
+              <h5 class="card-title">CAROL'S VIEW</h5>
+                <p class="card-text">Gun violence impacts everyone in the United States in someway.  
+                  A quick google search of just the words, Gun Violence, brings up many topics for discussion, such as the impact of mass shootings, suicide rates versus homicide, 
+                  the number of guns in the US, the number of deaths in the US, mental health issues, regulation conflicts, and even constitutional rights of the 2nd amendment.   
+                  Is there a solution?  We don't have that answer, but we do believe, better visualization of the issue may bring better understanding, which can lead to creative solutions. </p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            <div class="card">
+              <img class="card-img-top" src="..." alt="" color="black">
+                <div class="col-md-3">
+                  <h5 class="card-title">ENZO'S VIEW</h5>
+                  <p class="card-text">THIS IS ENZO'S VIEW.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="..." alt="" color="black">
+                  <div class="col-md-3">
+                    <h5 class="card-title">IAN'S VIEW</h5>
+                    <p class="card-text">THIS IS IAN'S VIEW.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+          </div
+            </section>  
+        </header>  
+        
+        <!-- Section for D3 map of county/ STATE-level gun death data -->
+    <section id="d3Map" class="bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 mx-auto">
+              <div class="greybox">
+                <h2>Gun Violence </h2>
+                  <p class="lead"> STATEMENT OF USE of MAP --- FOUR VIEWS.</p>
+              </div>
+              <div class="spacer" style="height:200px"></div>
+  
+              <p class="lead">Click on a state to explore STATE-level data and use the slider to see how rates have changed over time.</p>
+              <div class = map-container style="position: relative">
+                <div style="position: absolute; top:0; width: 150px;">
+                  
+                  
+                  
+                  <!-- <p>Fatality Category:</p> -->
+                  <select id = "layers">
+                    <option value="Mortality" selected="selected">Mortality</option>
+                    <option value="Mass Shooting">Mass Shooting</option>
+                    <option value="Gun Ownership">Gun Ownership</option>
+                    <option value="FBI Violent Crimes">FBI Violent Crimes</option>
+                  </select><br><br>
+                  <input type="checkbox" id="showShootings" checked="checked"> Show Mass Shooting Events <br>
+                  <span class="dot"></span><br><br>
+                  <svg id="legend-svg"></svg>
+                  <div class="legendNote" width="100px" height="50px">
+                    <p>Deaths per 100,000 <br>population</p>
+                  </div>
+                </div>
+                <div>
+                  <svg id = "map" width = "960" height = "500" ></svg>
+                  <svg id = "slider" width = "960" height = "40"></svg>
+                </div>
+              </div>
+              <script  src="js/d3Map.js"></script>
+            </div>
+          </div>
+        </div>
+    <section id='staticviews' class='leaflet-container'></section>
+        <div class="container text-center">
+          <<div class="container">
+              <div class="row">
+                <div class="col">Static View One</div>
+                <div class="col">Static View Two</div>
+                <div class="w-100"></div>
+                <div class="col">Static View Three</div>
+                <div class="col">Static View Four</div>
+              </div>
+            </div>
+      </section>
+      <section id='webscraping' class='leaflet-container'></section>
+      <div class="container text-center">
+        <<div class="container">
+            <div class="row">
+              <div class="col">TODAY's News</div>
+              <div class="col">Today's News</div>
+              <div class="w-100"></div>
+              <div class="col">Today's News</div>
+              <div class="col">Today's News</div>
+            </div>
+          </div>
+    </section>
+    <section id='fourconclusions' class='leaflet-container'></section>
+      <div class="container text-center">
+        <<div class="container">
+            <div class="row">
+              <div class="col">Beth Summary</div>
+              <div class="col">Carol Summary</div>
+              <div class="w-100"></div>
+              <div class="col">Enzo Summary</div>
+              <div class="col">Ian Summary</div>
+            </div>
+          </div>
+    </section>
+
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
+
+  </body>
+  <footer>
+
+    
+  </footer>
+
+
 </html>
+     
