@@ -1,19 +1,17 @@
 /* Styles for website body */
-*,
-*::before,
-*::after {
+*{
   box-sizing: border-box;
 }
-
-header h1{
-  background-color: #BAC4C8;
-}
-header p{
+container-text center p{
   color: black;
 
 }
 jumbotron {
-  background-color: #BAC4C8;
+  background-color: #e9ecef;
+}
+h1 {
+  background-color: #e9ecef;
+  color: #2F4F4F;
 }
 
 body {
