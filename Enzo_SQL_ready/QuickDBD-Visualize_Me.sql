@@ -88,20 +88,8 @@ CREATE TABLE "mother_jones" (
 ALTER TABLE "firearms_mfg" ADD CONSTRAINT "fk_firearms_mfg_year" FOREIGN KEY("year")
 REFERENCES "mother_jones" ("year");
 
-ALTER TABLE "firearms_mfg" ADD CONSTRAINT "fk_firearms_mfg_revolvers" FOREIGN KEY("revolvers")
-REFERENCES "reg_weapons_by_state" ("weapon");
-
-ALTER TABLE "firearms_mfg" ADD CONSTRAINT "fk_firearms_mfg_rilfes" FOREIGN KEY("rilfes")
-REFERENCES "reg_weapons_by_state" ("weapon");
-
-ALTER TABLE "firearms_mfg" ADD CONSTRAINT "fk_firearms_mfg_shotguns" FOREIGN KEY("shotguns")
-REFERENCES "reg_weapons_by_state" ("weapon");
-
-ALTER TABLE "firearms_mfg" ADD CONSTRAINT "fk_firearms_mfg_misc_firearms1" FOREIGN KEY("misc_firearms1")
-REFERENCES "reg_weapons_by_state" ("weapon");
-
 ALTER TABLE "reg_weapons_by_state" ADD CONSTRAINT "fk_reg_weapons_by_state_weapon" FOREIGN KEY("weapon")
-REFERENCES "firearms_mfg" ("pistols");
+REFERENCES "firearms_mfg" ("total_firearms");
 
 ALTER TABLE "reg_weapons_by_state" ADD CONSTRAINT "fk_reg_weapons_by_state_state_abbv" FOREIGN KEY("state_abbv")
 REFERENCES "mother_jones" ("state");
