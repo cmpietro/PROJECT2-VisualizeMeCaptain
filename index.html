@@ -34,6 +34,7 @@
     <script href="static/js/heatmap.js"></script>
     <script href="static/js/leaflet-heat.js"></script>
     
+    <!--This is for the NEWS Section-->
     <script href="news_fetch.js"></script>
   <!-- Leaflet JS & CSS -->  <!--- IS this WHAT we want?  --->
 <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
@@ -73,10 +74,13 @@ crossorigin=""></script>  -->
               <a class="nav-link js-scroll-trigger" href="#staticviews">Static Views</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#webscraping">Current News</a>
+              <a class="nav-link js-scroll-trigger" href="#newsjs">Current News</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#conclusions">Four Conclusions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#references">References Used</a>
             </li>
             </ul>
           </div>
@@ -89,8 +93,9 @@ crossorigin=""></script>  -->
       <div class="header">
         <!--<header class='text-white'>-->
           <div class="container text-center">
+              <div class="spacer" style="height:50px"></div>
            <h1> GUN VIOLENCE IN FOUR VIEWS</h1>
-            <p class='lead'> Beth, Carol, Enzo and Ian:  Student Data Visualization Project</p>
+            <p class='lead'>Four Students Respond - Data Visualization Project</p>
           </div>
         <!--</header>-->
       </div>
@@ -101,7 +106,7 @@ crossorigin=""></script>  -->
           <div class='row'>
             <div class='col-md-12 col-md-12'>
               <div class='greybox'>
-                <h2>Four Views</h2>
+                <h2>Four Views: Our initial thoughts on the topic of Gun Violence</h2>
               </div>
             </div>
               <div class="spacer" style="height:25px"></div>
@@ -159,7 +164,7 @@ crossorigin=""></script>  -->
           <div class="row">
             <div class="col-lg-12 mx-auto">
               <div class="greybox">
-                <h2>Gun Violence Mapped</h2>
+                <h2>Gun Violence Mapped: Interactive Mapping of Four Datasets</h2>
                   <p class="lead"> STATEMENT OF USE of MAP --- FOUR VIEWS.</p>
                   
               </div>
@@ -194,76 +199,79 @@ crossorigin=""></script>  -->
             </div>
           </div>
         </div>
+        <!--STATIC VISUALIZATIONS-->
         <section id='staticviews' class="container">
             <div class="container">
               <div class='row'>
                 <div class='col-md-12 col-md-12'>
                   <div class='greybox'>
-                    <h2>Static Views</h2>
+                    <h2>Static Views: Four Organizations Representations of Gun Violence</h2>
                   </div>
                 </div>
                   <div class="spacer" style="height:25px"></div>
-                  <div class='col-md-12 col-md-12'>
-                    <h3 class="title"> Static View ONE</h3>
-                      <p class='text'>"HOLDER"</p>
+                  <div class='col-md-12 col-sm-12'>
+                    <h3 class="title"> ONE: thetrace.org Mapping of 150,000 shootings over five years</h3>
+                      <p class='img-thumbnail'><img src="images/0_a_4llBIWbEeO9ML5.png" width="800" height="500"</p>
                   </div>
                   <div class="spacer" style="height:25px"></div>
-                  <div class='col-md-12 col-md-12'>
-                    <h3 class="title">Static View TWO</h3>
-                      <p class="text">"HOLDER." </p>
+                  <div class='col-md-12 col-sm-12'>
+                    <h3 class="title">TWO: nytimes.com Images of Mass Shootings Favorite Weapons</h3>
+                      <p class="img-thumbnail"><img src="images/how-mass-shooters-got-their-guns-1443842838386-superJumbo-v11.png" width="800" height="600"</p>
                     </div>
                     <div class="spacer" style="height:25px"></div>
-                    <div class='col-md-12 col-md-12'>
-                    <h3 class="title">Static View THREE</h3>
-                        <p class="text">"HOLDER"</p>
+                    <div class='col-md-12 col-sm-12'>
+                    <h3 class="title">THREE: bbc.com America's Gun Culture in Charts</h3>
+                        <p class="img-thumbnail"><img src="images/_107405368_gun_people_killed_v4_-3x640-nc.png"width="800" height="600"</p>
                     </div>
                     <div class="spacer" style="height:25px"></div>
-                    <div class='col-md-12 col-md-12'>
-                    <h3 class="title">Static View FOUR</h3>
-                        <p class="text">"HOLDER"</p>
+                    <div class='col-md-12 col-sm-12'>
+                    <h3 class="title">FOUR: mhanational.org The State of Mental Health in America </h3>
+                        <p class="img-thumbnail"><img src="images/key-findings-infographics.png" width="800" height="600"</p>
                       </div>
                     </div>
                   </div>
                 </div>
              </section>  
-      <section id='webscraping' class="container">
+                <!--NEWS SECTION-->
+        <section id='newsjs' class="container">
           <div class="container">
             <div class='row'>
               <div class='col-md-12 col-md-12'>
                 <div class='greybox'>
-                  <h2>Today's News</h2>
+                  <h2>Today's News: </h2>
                 </div>
               </div>
                 <div class="spacer" style="height:25px"></div>
                 <div class='col-md-12 col-md-12'>
-                  <h3 class="title"> Google News</h3>
-                    <p class='text'>"HOLDER"</p>
+                  <h3 class="title"> Headline One: </h3>
+                    <p class='text'><script src='news_fetch.js'></script></p>
                 </div>
                 <div class="spacer" style="height:25px"></div>
                 <div class='col-md-12 col-md-12'>
-                  <h3 class="title">NES</h3>
-                    <p class="text">"Holder" </p>
+                  <h3 class="title">Headline Two: </h3>
+                    <p class="text"><script src='news_fetch.js'></script></p>
                   </div>
                   <div class="spacer" style="height:25px"></div>
                   <div class='col-md-12 col-md-12'>
-                  <h3 class="title">NEWS</h3>
-                      <p class="text">"HOLDER"</p>
+                  <h3 class="title">Headline Three: </h3>
+                      <p class="text"><script src='news_fetch.js'></script></p>
                   </div>
                   <div class="spacer" style="height:25px"></div>
                   <div class='col-md-12 col-md-12'>
-                  <h3 class="title">NEWDS</h3>
-                      <p class="text">"HOLDER"</p>
+                  <h3 class="title">Headline Four: </h3>
+                      <p class="text"><script src='news_fetch.js'></script></p>
                     </div>
                   </div>
                 </div>
               </div>
            </section>  
+           <!-- CONCLUSIONS -->
       <section id='conclusions' class="container">
           <div class="container">
             <div class='row'>
               <div class='col-md-12 col-md-12'>
                 <div class='greybox'>
-                  <h2>Conclusions</h2>
+                  <h2>Conclusions: What We Now Think</h2>
                 </div>
               </div>
                 <div class="spacer" style="height:25px"></div>
@@ -274,7 +282,14 @@ crossorigin=""></script>  -->
                 <div class="spacer" style="height:25px"></div>
                 <div class='col-md-12 col-md-12'>
                   <h3 class="title">Carol'S Summary</h3>
-                    <p class="text">"THOIS IS A PLACE HOLDER FOR " </p>
+                    <p class="text">Gun violence was not an easy topic for learning or expressing what I have learned while researching the 
+                      topic.  Guns and violence bring out strong emotions and evoke a strong undercurrent of fear in daily society that 
+                      was emphasized while working on this project.  I believed prior to working on this topic that a multi-faceted approach
+                      is the only way bring a solution.  I still believe any solution must include a reduction in the power of the NRA to control our 
+                      society and our officials, improved mental health care access for all, reduced racial and economic disparities 
+                      and improved "common sense" gun controls that reduce the ability of desperate people to have access to guns when 
+                      what they need is help. Learnings from the project are: Data is never easy but it is enlightening, you can learn a lot 
+                      from simple google searches and breaking down tasks into the smallest bit possible. </p>
                   </div>
                   <div class="spacer" style="height:25px"></div>
                   <div class='col-md-12 col-md-12'>
@@ -290,15 +305,56 @@ crossorigin=""></script>  -->
                 </div>
               </div>
            </section>  
-
-    
-
-    
-    
-  </body>
+           <!-- References-->
+           <section id='references' class="container">
+              <div class="container">
+                <div class='row'>
+                  <div class='col-md-12 col-md-12'>
+                    <div class='greybox'>
+                      <h2>References and Inspirations: Who We Are and What We Used</h2>
+                    </div>
+                  </div>
+                    <div class="spacer" style="height:25px"></div>
+                    <div class='col-md-12 col-md-12'>
+                      <h3 class="title"> We Are:</h3>
+                        <p class='text'>Our team included: Beth Grace, Carol Pietro Kadish, Enzo Adriano and Ian Valentik <br>
+                          Can we say a sentence about each of us? 
+                        </p>
+                    </div>
+                    <div class="spacer" style="height:25px"></div>
+                    <div class='col-md-12 col-md-12'>
+                      <h3 class="title">Our Inspirations:</h3>
+                        <a href='http://people.ischool.berkeley.edu/~ksgifford/gun_violence_viz/' target="_blank">Berkley Project: Visualizing Gun Violence</a> 
+                        <br>
+                        <a href='https://fivethirtyeight.com/features/gun-deaths/' target="_blank">538: Gun Deaths</a> 
+                      </div>
+                      <div class="spacer" style="height:25px"></div>
+                      <div class='col-md-12 col-md-12'>
+                      <h3 class="title">Resources Used:</h3>
+                          <a href="https://www.thetrace.org/features/gun-violence-interactive-shootings-map/" target="_blank">Static View 1: The Trace</a>
+                          <br>
+                          <a href="https://www.nytimes.com/2018/02/15/us/6-stories-and-charts-to-help-you-better-understand-gun-violence.html" target="_blank">Static View 2: New York Times</a>
+                          <br>
+                          <a href="https://www.bbc.com/news/world-us-canada-41488081" target="_blank">Static View 3: The BBC</a>
+                          <br>
+                          <a href="https://www.mhanational.org/issues/state-mental-health-america" target="_blank">Static View 4: Mental Health Association</a>
+                      </div>
+                      <div class="spacer" style="height:25px"></div>
+                      <div class='col-md-12 col-md-12'>
+                      <h3 class="title">Technology Used: </h3>
+                          <p class="text">"We used javascript as our primary application with HTML and CSS.  We "</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               </section>  
+    </body>
+    <!--FOOTER-->
   <footer>
-
-    
+    <div class="spacer" style="height:25px"></div>
+    <div class='col-md-12 col-md-12'>
+      <div class="bg-dark fixed-bottom">Copyright &copy; Project: Visualize Me! Gun Violence. TEAM: Beth, Carol, Enzo and Ian 2019</div>
+          
   </footer>
 
 
