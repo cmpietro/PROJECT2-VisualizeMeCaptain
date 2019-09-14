@@ -1,0 +1,2285 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.6682606,35.8209895 ]
+    },
+    "properties": {
+    "date":"3/24/1998",
+    "coordinates":"35.8209895, -90.6682606",
+    "year":1998,
+    "case":"Westside Middle School killings",
+    "location":"Jonesboro, Arkansas",
+    "total_victims":15,
+    "age_of_shooter":11,
+    "weapon_type":"Two semiautomatic handguns, two rifles, three revolvers, two derringers",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.176918,48.050824 ]
+    },
+    "properties": {
+    "date":"10/24/2014",
+    "coordinates":"48.050824, -122.176918",
+    "year":2014,
+    "case":"Marysville-Pilchuck High School shooting",
+    "location":"Marysville, Washington",
+    "total_victims":6,
+    "age_of_shooter":15,
+    "weapon_type":"Handgun",
+    "race":"Native American",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -123.0220289,44.0462362 ]
+    },
+    "properties": {
+    "date":"5/21/1998",
+    "coordinates":"44.0462362, -123.0220289",
+    "year":1998,
+    "case":"Thurston High School shooting",
+    "location":"Springfield, Oregon",
+    "total_victims":29,
+    "age_of_shooter":15,
+    "weapon_type":"Two semiautomatic handguns, one rifle",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.0169401,47.876346 ]
+    },
+    "properties": {
+    "date":"3/21/2005",
+    "coordinates":"47.876346, -95.0169401",
+    "year":2005,
+    "case":"Red Lake massacre",
+    "location":"Red Lake, Minnesota",
+    "total_victims":15,
+    "age_of_shooter":16,
+    "weapon_type":"Two semiautomatic handguns, one shotgun",
+    "race":"Native American",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -95.141972,29.392825 ]
+    },
+    "properties": {
+    "date":"5/18/2018",
+    "coordinates":"29.392825, -95.141972",
+    "year":2018,
+    "case":"Santa Fe High School shooting",
+    "location":"Santa Fe, TX",
+    "total_victims":23,
+    "age_of_shooter":17,
+    "weapon_type":"shotgun; .38 revolver",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -105.074103,39.604034 ]
+    },
+    "properties": {
+    "date":"4/20/1999",
+    "coordinates":"39.604034, -105.074103",
+    "year":1999,
+    "case":"Columbine High School massacre",
+    "location":"Littleton, Colorado",
+    "total_victims":37,
+    "age_of_shooter":17,
+    "weapon_type":"One semiautomatic handgun (assault), one rifle (assault), two shotguns",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -111.89109,40.7606467 ]
+    },
+    "properties": {
+    "date":"2/12/2007",
+    "coordinates":"40.7606467, -111.89109",
+    "year":2007,
+    "case":"Trolley Square shooting",
+    "location":"Salt Lake City, Utah",
+    "total_victims":10,
+    "age_of_shooter":18,
+    "weapon_type":"One revolver, one shotgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.584819,36.997191 ]
+    },
+    "properties": {
+    "date":"7/28/2019",
+    "coordinates":"36.997191, -121.584819",
+    "year":2019,
+    "case":"Gilroy garlic festival shooting",
+    "location":"Gilroy, CA",
+    "total_victims":15,
+    "age_of_shooter":19,
+    "weapon_type":"semiautomatic rifle",
+    "race":"-",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.269511,26.30483 ]
+    },
+    "properties": {
+    "date":"2/14/2018",
+    "coordinates":"26.30483, -80.269511",
+    "year":2018,
+    "case":"Marjory Stoneman Douglas High School shooting",
+    "location":"Parkland, FL",
+    "total_victims":34,
+    "age_of_shooter":19,
+    "weapon_type":"semiautomatic rifle",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.067495,41.265719 ]
+    },
+    "properties": {
+    "date":"12/5/2007",
+    "coordinates":"41.265719, -96.067495",
+    "year":2007,
+    "case":"Westroads Mall shooting",
+    "location":"Omaha, Nebraska",
+    "total_victims":13,
+    "age_of_shooter":19,
+    "weapon_type":"One rifle (assault)",
+    "race":"white",
+    "gender":"Male",
+    "type":"Spree"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.844845,39.675599 ]
+    },
+    "properties": {
+    "date":"12/14/1993",
+    "coordinates":"39.675599, -104.844845",
+    "year":1993,
+    "case":"Chuck E. Cheese's killings",
+    "location":"Aurora, Colorado",
+    "total_victims":5,
+    "age_of_shooter":19,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"black",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.337918,48.461367 ]
+    },
+    "properties": {
+    "date":"9/23/2016",
+    "coordinates":"48.461367, -122.337918",
+    "year":2016,
+    "case":"Cascade Mall shooting",
+    "location":"Burlington, Washington",
+    "total_victims":5,
+    "age_of_shooter":20,
+    "weapon_type":"Rifle",
+    "race":"-",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.31142358,41.4123225 ]
+    },
+    "properties": {
+    "date":"12/14/2012",
+    "coordinates":"41.4123225, -73.31142358",
+    "year":2012,
+    "case":"Sandy Hook Elementary massacre",
+    "location":"Newtown, Connecticut",
+    "total_victims":29,
+    "age_of_shooter":20,
+    "weapon_type":"Two semiautomatic handguns, one rifle (assault), one shotgun (assault)",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -88.9028922,45.5719072 ]
+    },
+    "properties": {
+    "date":"10/7/2007",
+    "coordinates":"45.5719072, -88.9028922",
+    "year":2007,
+    "case":"Crandon shooting",
+    "location":"Crandon, Wisconsin",
+    "total_victims":7,
+    "age_of_shooter":20,
+    "weapon_type":"One rifle (assault)",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.6483587,47.61864486 ]
+    },
+    "properties": {
+    "date":"6/20/1994",
+    "coordinates":"47.61864486, -117.6483587",
+    "year":1994,
+    "case":"Air Force base shooting",
+    "location":"Fairchild Air Force Base, Washington",
+    "total_victims":28,
+    "age_of_shooter":20,
+    "weapon_type":"One rifle (assault)",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.5475762,39.07868761 ]
+    },
+    "properties": {
+    "date":"5/1/1992",
+    "coordinates":"39.07868761, -121.5475762",
+    "year":1992,
+    "case":"Lindhurst High School shooting",
+    "location":"Olivehurst, California",
+    "total_victims":14,
+    "age_of_shooter":20,
+    "weapon_type":"One rifle, one shotgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.375655,31.771068 ]
+    },
+    "properties": {
+    "date":"8/3/2019",
+    "coordinates":"31.771068, -106.375655",
+    "year":2019,
+    "case":"El Paso Walmart mass shooting",
+    "location":"El Paso, TX",
+    "total_victims":48,
+    "age_of_shooter":21,
+    "weapon_type":"semiautomatic rifle",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.839411,40.785142 ]
+    },
+    "properties": {
+    "date":"1/24/2019",
+    "coordinates":"40.785142, -77.839411",
+    "year":2019,
+    "case":"Pennsylvania hotel bar shooting",
+    "location":"State College, PA",
+    "total_victims":4,
+    "age_of_shooter":21,
+    "weapon_type":"handgun",
+    "race":"White",
+    "gender":"Male",
+    "type":"Spree"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.45847,27.471043 ]
+    },
+    "properties": {
+    "date":"1/23/2019",
+    "coordinates":"27.471043, -81.45847",
+    "year":2019,
+    "case":"SunTrust bank shooting",
+    "location":"Sebring, FL",
+    "total_victims":5,
+    "age_of_shooter":21,
+    "weapon_type":"handgun",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.933143,32.788387 ]
+    },
+    "properties": {
+    "date":"6/17/2015",
+    "coordinates":"32.788387, -79.933143",
+    "year":2015,
+    "case":"Charleston Church Shooting",
+    "location":"Charleston, South Carolina",
+    "total_victims":10,
+    "age_of_shooter":21,
+    "weapon_type":"Handgun",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.8714406,34.436283 ]
+    },
+    "properties": {
+    "date":"5/23/2014",
+    "coordinates":"34.436283, -119.8714406",
+    "year":2014,
+    "case":"Isla Vista mass murder",
+    "location":"Santa Barbara, California",
+    "total_victims":19,
+    "age_of_shooter":22,
+    "weapon_type":"Three semi-automatic handguns and two hunting knives",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -110.975132,32.335941 ]
+    },
+    "properties": {
+    "date":"1/8/2011",
+    "coordinates":"32.335941, -110.975132",
+    "year":2011,
+    "case":"Tucson shooting",
+    "location":"Tucson, Arizona",
+    "total_victims":19,
+    "age_of_shooter":22,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -78.8787058,35.0529931 ]
+    },
+    "properties": {
+    "date":"8/6/1993",
+    "coordinates":"35.0529931, -78.8787058",
+    "year":1993,
+    "case":"Luigi's shooting",
+    "location":"Fayetteville, North Carolina",
+    "total_victims":12,
+    "age_of_shooter":22,
+    "weapon_type":"One rifle, two shotguns",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.494754,34.008617 ]
+    },
+    "properties": {
+    "date":"6/7/2013",
+    "coordinates":"34.008617, -118.494754",
+    "year":2013,
+    "case":"Santa Monica rampage",
+    "location":"Santa Monica, California",
+    "total_victims":9,
+    "age_of_shooter":23,
+    "weapon_type":"Assault rifle, high capacity magazines, antique handgun\n",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.4139393,37.2295733 ]
+    },
+    "properties": {
+    "date":"4/16/2007",
+    "coordinates":"37.2295733, -80.4139393",
+    "year":2007,
+    "case":"Virginia Tech massacre",
+    "location":"Blacksburg, Virginia",
+    "total_victims":55,
+    "age_of_shooter":23,
+    "weapon_type":"Two semiautomatic handguns",
+    "race":"Asian",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.184947,39.757312 ]
+    },
+    "properties": {
+    "date":"8/4/2019",
+    "coordinates":"39.757312, -84.184947",
+    "year":2019,
+    "case":"Dayton entertainment district shooting",
+    "location":"Dayton, OH",
+    "total_victims":36,
+    "age_of_shooter":24,
+    "weapon_type":"semiautomatic rifle",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.94722,41.529546 ]
+    },
+    "properties": {
+    "date":"6/7/2017",
+    "coordinates":"41.529546, -75.94722",
+    "year":2017,
+    "case":"Pennsylvania supermarket shooting",
+    "location":"Tunkhannock, Pennsylvania",
+    "total_victims":3,
+    "age_of_shooter":24,
+    "weapon_type":"shotguns",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -85.311819,35.047157 ]
+    },
+    "properties": {
+    "date":"7/16/2015",
+    "coordinates":"35.047157, -85.311819",
+    "year":2015,
+    "case":"Chattanooga military recruitment center",
+    "location":"Chattanooga, Tennessee",
+    "total_victims":7,
+    "age_of_shooter":24,
+    "weapon_type":"2 assault rifles; semiautomatic handgun\n",
+    "race":"Other",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.820594,39.706038 ]
+    },
+    "properties": {
+    "date":"7/20/2012",
+    "coordinates":"39.706038, -104.820594",
+    "year":2012,
+    "case":"Aurora theater shooting",
+    "location":"Aurora, Colorado",
+    "total_victims":82,
+    "age_of_shooter":24,
+    "weapon_type":"Two semiautomatic handguns, one rifle (assault), one shotgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Spree"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.8000082,32.7801052 ]
+    },
+    "properties": {
+    "date":"7/7/2016",
+    "coordinates":"32.7801052, -96.8000082",
+    "year":2016,
+    "case":"Dallas police shooting",
+    "location":"Dallas, Texas",
+    "total_victims":16,
+    "age_of_shooter":25,
+    "weapon_type":"Semiautomatic rifle, semiautomatic handguns",
+    "race":"Black",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.5573742,37.76721 ]
+    },
+    "properties": {
+    "date":"6/25/2008",
+    "coordinates":"37.76721, -87.5573742",
+    "year":2008,
+    "case":"Atlantis Plastics shooting",
+    "location":"Henderson, Kentucky",
+    "total_victims":7,
+    "age_of_shooter":25,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Spree"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.0007065,39.9622601 ]
+    },
+    "properties": {
+    "date":"12/8/2004",
+    "coordinates":"39.9622601, -83.0007065",
+    "year":2004,
+    "case":"Damageplan show shooting",
+    "location":"Columbus, Ohio",
+    "total_victims":12,
+    "age_of_shooter":25,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.208485,39.455658 ]
+    },
+    "properties": {
+    "date":"9/20/2018",
+    "coordinates":"39.455658, -76.208485",
+    "year":2018,
+    "case":"Rite Aid warehouse shooting",
+    "location":"Perryman, MD",
+    "total_victims":6,
+    "age_of_shooter":26,
+    "weapon_type":"semiautomatic handgun",
+    "race":"Black",
+    "gender":"Female",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -98.056488,29.273282 ]
+    },
+    "properties": {
+    "date":"11/5/2017",
+    "coordinates":"29.273282, -98.056488",
+    "year":2017,
+    "case":"Texas First Baptist Church massacre",
+    "location":"Sutherland Springs, TX",
+    "total_victims":46,
+    "age_of_shooter":26,
+    "weapon_type":"semiautomatic rifle",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.143382,26.072751 ]
+    },
+    "properties": {
+    "date":"1/6/2017",
+    "coordinates":"26.072751, -80.143382",
+    "year":2017,
+    "case":"Fort Lauderdale airport shooting",
+    "location":"Fort Lauderdale, Florida",
+    "total_victims":11,
+    "age_of_shooter":26,
+    "weapon_type":"semiautomatic handgun\n",
+    "race":"Latino",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -123.333193,43.289538 ]
+    },
+    "properties": {
+    "date":"10/1/2015",
+    "coordinates":"43.289538, -123.333193",
+    "year":2015,
+    "case":"Umpqua Community College shooting",
+    "location":"Roseburg, Oregon",
+    "total_victims":18,
+    "age_of_shooter":26,
+    "weapon_type":"Five pistols, one rifle, five magazines of ammunition",
+    "race":"Other",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -121.2907796,37.9577016 ]
+    },
+    "properties": {
+    "date":"1/17/1989",
+    "coordinates":"37.9577016, -121.2907796",
+    "year":1989,
+    "case":"Stockton schoolyard shooting",
+    "location":"Stockton, California",
+    "total_victims":35,
+    "age_of_shooter":26,
+    "weapon_type":"One semiautomatic handgun, one rifle (assault)",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -88.467541,44.204124 ]
+    },
+    "properties": {
+    "date":"6/11/2015",
+    "coordinates":"44.204124, -88.467541",
+    "year":2015,
+    "case":"Trestle Trail bridge shooting",
+    "location":"Menasha, Wisconsin",
+    "total_victims":4,
+    "age_of_shooter":27,
+    "weapon_type":"Two handguns\n",
+    "race":"Latino",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3393665,47.3129607 ]
+    },
+    "properties": {
+    "date":"4/21/2013",
+    "coordinates":"47.3129607, -122.3393665",
+    "year":2013,
+    "case":"Pinewood Village Apartment shooting",
+    "location":"Federal Way, Washington",
+    "total_victims":5,
+    "age_of_shooter":27,
+    "weapon_type":"Semiautomatic handgun, shotgun",
+    "race":"Black",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -88.7503647,41.9294736 ]
+    },
+    "properties": {
+    "date":"2/14/2008",
+    "coordinates":"41.9294736, -88.7503647",
+    "year":2008,
+    "case":"Northern Illinois University shooting",
+    "location":"DeKalb, Illinois",
+    "total_victims":26,
+    "age_of_shooter":27,
+    "weapon_type":"Three semiautomatic handguns, one shotgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.874793,34.176946 ]
+    },
+    "properties": {
+    "date":"11/7/2018",
+    "coordinates":"34.176946, -118.874793",
+    "year":2018,
+    "case":"Thousand Oaks nightclub shooting",
+    "location":"Thousand Oaks, CA",
+    "total_victims":34,
+    "age_of_shooter":28,
+    "weapon_type":"semiautomatic handgun",
+    "race":"-",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.389166,40.052151 ]
+    },
+    "properties": {
+    "date":"1/28/2018",
+    "coordinates":"40.052151, -79.389166",
+    "year":2018,
+    "case":"Pennsylvania carwash shooting",
+    "location":"Melcroft, PA",
+    "total_victims":5,
+    "age_of_shooter":28,
+    "weapon_type":"semiautomatic rifle and semiautomatic handgun",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.27789,34.075961 ]
+    },
+    "properties": {
+    "date":"12/2/2015",
+    "coordinates":"34.075961, -117.27789",
+    "year":2015,
+    "case":"San Bernardino mass shooting",
+    "location":"San Bernardino, California",
+    "total_victims":35,
+    "age_of_shooter":28,
+    "weapon_type":"Two assault rifles and two semi-automatic pistols were used in the attack. Police found a remote controlled explosive device at the scene of the crime. At the home were 12 pipe bombs, 2,500 rounds for the AR-15 variants, 2,000 rounds for the pistols, and several hundred for a .22 calibre rifle. In the suspects' car were an additional 1,400 rounds for the rifles and 200 for the handguns.",
+    "race":"Other",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3165,47.6229 ]
+    },
+    "properties": {
+    "date":"3/25/2006",
+    "coordinates":"47.6229, -122.3165",
+    "year":2006,
+    "case":"Capitol Hill massacre",
+    "location":"Seattle, Washington",
+    "total_victims":9,
+    "age_of_shooter":28,
+    "weapon_type":"Two semiautomatic handguns, one rifle (assault), one shotgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.548198,27.828025 ]
+    },
+    "properties": {
+    "date":"4/3/1995",
+    "coordinates":"27.828025, -97.548198",
+    "year":1995,
+    "case":"Walter Rossler Company massacre",
+    "location":"Corpus Christi, Texas",
+    "total_victims":6,
+    "age_of_shooter":28,
+    "weapon_type":"One semiautomatic handgun, one revolver",
+    "race":"unclear",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.5302214,41.6606893 ]
+    },
+    "properties": {
+    "date":"11/1/1991",
+    "coordinates":"41.6606893, -91.5302214",
+    "year":1991,
+    "case":"University of Iowa shooting",
+    "location":"Iowa City, Iowa",
+    "total_victims":7,
+    "age_of_shooter":28,
+    "weapon_type":"One revolver",
+    "race":"Asian",
+    "gender":"Male",
+    "type":"Spree"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.511782,39.101981 ]
+    },
+    "properties": {
+    "date":"9/6/2018",
+    "coordinates":"39.101981, -84.511782",
+    "year":2018,
+    "case":"Fifth Third Center shooting",
+    "location":"Cincinnati, OH",
+    "total_victims":5,
+    "age_of_shooter":29,
+    "weapon_type":"semiautomatic handgun",
+    "race":"Latino",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -86.616944,36.052521 ]
+    },
+    "properties": {
+    "date":"4/22/2018",
+    "coordinates":"36.052521, -86.616944",
+    "year":2018,
+    "case":"Waffle House shooting",
+    "location":"Nashville, TN",
+    "total_victims":8,
+    "age_of_shooter":29,
+    "weapon_type":"semiautomatic rifle",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -91.081403,30.433601 ]
+    },
+    "properties": {
+    "date":"7/17/2016",
+    "coordinates":"30.433601, -91.081403",
+    "year":2016,
+    "case":"Baton Rouge police shooting",
+    "location":"Baton Rouge, Lousiana",
+    "total_victims":6,
+    "age_of_shooter":29,
+    "weapon_type":"Two semiautomatic rifles; one semiautomatic handgun",
+    "race":"Black",
+    "gender":"Male",
+    "type":"Spree"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.376777,28.519718 ]
+    },
+    "properties": {
+    "date":"6/12/2016",
+    "coordinates":"28.519718, -81.376777",
+    "year":2016,
+    "case":"Orlando nightclub massacre",
+    "location":"Orlando, Florida",
+    "total_victims":102,
+    "age_of_shooter":29,
+    "weapon_type":"Semiautomatic rifle, semiautomatic handgun",
+    "race":"Other",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -83.1446485,42.4894801 ]
+    },
+    "properties": {
+    "date":"11/14/1991",
+    "coordinates":"42.4894801, -83.1446485",
+    "year":1991,
+    "case":"Royal Oak postal shootings",
+    "location":"Royal Oak, Michigan",
+    "total_victims":10,
+    "age_of_shooter":31,
+    "weapon_type":"One rifle",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.622009,41.847667 ]
+    },
+    "properties": {
+    "date":"11/19/2018",
+    "coordinates":"41.847667, -87.622009",
+    "year":2018,
+    "case":"Mercy Hospital shooting",
+    "location":"Chicago, IL",
+    "total_victims":3,
+    "age_of_shooter":32,
+    "weapon_type":"semiautomatic handgun",
+    "race":"Latino",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.7674034,39.1637984 ]
+    },
+    "properties": {
+    "date":"9/6/2011",
+    "coordinates":"39.1637984, -119.7674034",
+    "year":2011,
+    "case":"IHOP shooting",
+    "location":"Carson City, Nevada",
+    "total_victims":12,
+    "age_of_shooter":32,
+    "weapon_type":"Two rifles (both assault), one revolver",
+    "race":"Latino",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.0806,39.9589 ]
+    },
+    "properties": {
+    "date":"10/2/2006",
+    "coordinates":"39.9589, -76.0806",
+    "year":2006,
+    "case":"Amish school shooting",
+    "location":"Lancaster County, Pennsylvania",
+    "total_victims":11,
+    "age_of_shooter":32,
+    "weapon_type":"One semiautomatic handgun, one rifle, one shotgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.814251,38.83755 ]
+    },
+    "properties": {
+    "date":"10/31/2015",
+    "coordinates":"38.83755, -104.814251",
+    "year":2015,
+    "case":"Colorado Springs shooting rampage",
+    "location":"Colorado Springs, Colorado",
+    "total_victims":3,
+    "age_of_shooter":33,
+    "weapon_type":"Two handguns and a rifle",
+    "race":"White ",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.777559,31.141716 ]
+    },
+    "properties": {
+    "date":"4/3/2014",
+    "coordinates":"31.141716, -97.777559",
+    "year":2014,
+    "case":"Fort Hood shooting 2",
+    "location":"Fort Hood, Texas",
+    "total_victims":15,
+    "age_of_shooter":34,
+    "weapon_type":"handgun\n",
+    "race":"Latino",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99453,38.874981 ]
+    },
+    "properties": {
+    "date":"9/16/2013",
+    "coordinates":"38.874981, -76.99453",
+    "year":2013,
+    "case":"Washington Navy Yard shooting",
+    "location":"Washington, D.C.",
+    "total_victims":20,
+    "age_of_shooter":34,
+    "weapon_type":"Sawed-off shotgun, 2 boxes of shells; also a .45-caliber handgun taken from a security guard he shot at the scene.",
+    "race":"Black",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.570068,41.798764 ]
+    },
+    "properties": {
+    "date":"8/3/2010",
+    "coordinates":"41.798764, -72.570068",
+    "year":2010,
+    "case":"Hartford Beer Distributor shooting",
+    "location":"Manchester, Connecticut",
+    "total_victims":11,
+    "age_of_shooter":34,
+    "weapon_type":"Two semiautomatic handguns",
+    "race":"black",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.72983827,41.6856325 ]
+    },
+    "properties": {
+    "date":"3/6/1998",
+    "coordinates":"41.6856325, -72.72983827",
+    "year":1998,
+    "case":"Connecticut Lottery shooting",
+    "location":"Newington, Connecticut",
+    "total_victims":6,
+    "age_of_shooter":35,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.6342955,40.7267682 ]
+    },
+    "properties": {
+    "date":"12/7/1993",
+    "coordinates":"40.7267682, -73.6342955",
+    "year":1993,
+    "case":"Long Island Rail Road massacre",
+    "location":"Garden City, New York",
+    "total_victims":25,
+    "age_of_shooter":35,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"black",
+    "gender":"Male",
+    "type":"Spree"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.7277959,31.1171194 ]
+    },
+    "properties": {
+    "date":"10/16/1991",
+    "coordinates":"31.1171194, -97.7277959",
+    "year":1991,
+    "case":"Luby's massacre",
+    "location":"Killeen, Texas",
+    "total_victims":44,
+    "age_of_shooter":35,
+    "weapon_type":"Two semiautomatic handguns",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.366528,38.392496 ]
+    },
+    "properties": {
+    "date":"3/9/2018",
+    "coordinates":"38.392496, -122.366528",
+    "year":2018,
+    "case":"Yountville veterans home shooting",
+    "location":"Yountville, CA",
+    "total_victims":3,
+    "age_of_shooter":36,
+    "weapon_type":"semiautomatic rifle; shotgun",
+    "race":"Asian",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -93.310408,44.977425 ]
+    },
+    "properties": {
+    "date":"9/27/2012",
+    "coordinates":"44.977425, -93.310408",
+    "year":2012,
+    "case":"Accent Signage Systems shooting",
+    "location":"Minneapolis, Minnesota",
+    "total_victims":8,
+    "age_of_shooter":36,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.570586,27.966479 ]
+    },
+    "properties": {
+    "date":"12/30/1999",
+    "coordinates":"27.966479, -82.570586",
+    "year":1999,
+    "case":"Hotel shooting",
+    "location":"Tampa, Florida",
+    "total_victims":8,
+    "age_of_shooter":36,
+    "weapon_type":"One semiautomatic handgun, one revolver",
+    "race":"Latino",
+    "gender":"Male",
+    "type":"Spree"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.309988,39.452189 ]
+    },
+    "properties": {
+    "date":"10/18/2017",
+    "coordinates":"39.452189, -76.309988",
+    "year":2017,
+    "case":"Edgewood businees park shooting",
+    "location":"Edgewood, MD",
+    "total_victims":6,
+    "age_of_shooter":37,
+    "weapon_type":"handgun",
+    "race":"Black",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.467308,47.15277 ]
+    },
+    "properties": {
+    "date":"11/29/2009",
+    "coordinates":"47.15277, -122.467308",
+    "year":2009,
+    "case":"Coffee shop police killings",
+    "location":"Parkland, Washington",
+    "total_victims":5,
+    "age_of_shooter":37,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"black",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.543657,38.994548 ]
+    },
+    "properties": {
+    "date":"6/28/2018",
+    "coordinates":"38.994548, -76.543657",
+    "year":2018,
+    "case":"Capital Gazette shooting",
+    "location":"Annapolis, MD",
+    "total_victims":7,
+    "age_of_shooter":38,
+    "weapon_type":"shotgun",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.406087,37.765947 ]
+    },
+    "properties": {
+    "date":"6/14/2017",
+    "coordinates":"37.765947, -122.406087",
+    "year":2017,
+    "case":"San Francisco UPS shooting",
+    "location":"San Francisco, CA",
+    "total_victims":5,
+    "age_of_shooter":38,
+    "weapon_type":"two handguns",
+    "race":"Asian",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.425145,38.135992 ]
+    },
+    "properties": {
+    "date":"2/25/2016",
+    "coordinates":"38.135992, -97.425145",
+    "year":2016,
+    "case":"Excel Industries mass shooting",
+    "location":"Hesston, Kansas",
+    "total_victims":17,
+    "age_of_shooter":38,
+    "weapon_type":"Semiautomatic rifle, semiautomatic handgun",
+    "race":"Black",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.800319,36.746378 ]
+    },
+    "properties": {
+    "date":"4/18/2017",
+    "coordinates":"36.746378, -119.800319",
+    "year":2017,
+    "case":"Fresno downtown shooting",
+    "location":"Fresno, California",
+    "total_victims":3,
+    "age_of_shooter":39,
+    "weapon_type":"handgun",
+    "race":"Black",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.783664,31.135557 ]
+    },
+    "properties": {
+    "date":"11/5/2009",
+    "coordinates":"31.135557, -97.783664",
+    "year":2009,
+    "case":"Fort Hood massacre",
+    "location":"Fort Hood, Texas",
+    "total_victims":43,
+    "age_of_shooter":39,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"Other",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.0363496,37.3688301 ]
+    },
+    "properties": {
+    "date":"2/16/1988",
+    "coordinates":"37.3688301, -122.0363496",
+    "year":1988,
+    "case":"ESL shooting",
+    "location":"Sunnyvale, California",
+    "total_victims":11,
+    "age_of_shooter":39,
+    "weapon_type":"Two semiautomatic handguns, one rifle, two revolvers, two shotguns",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -96.838676,32.925166 ]
+    },
+    "properties": {
+    "date":"6/29/1984",
+    "coordinates":"32.925166, -96.838676",
+    "year":1984,
+    "case":"Dallas nightclub shooting",
+    "location":"Dallas, Texas",
+    "total_victims":7,
+    "age_of_shooter":39,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.060378,36.75442 ]
+    },
+    "properties": {
+    "date":"5/31/2019",
+    "coordinates":"36.75442, -76.060378",
+    "year":2019,
+    "case":"Virginia Beach municipal building shooting",
+    "location":"Virginia Beach, VA",
+    "total_victims":16,
+    "age_of_shooter":40,
+    "weapon_type":"2 handguns",
+    "race":"Black",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.8631362,42.8858503 ]
+    },
+    "properties": {
+    "date":"8/5/2012",
+    "coordinates":"42.8858503, -87.8631362",
+    "year":2012,
+    "case":"Sikh temple shooting",
+    "location":"Oak Creek, Wisconsin",
+    "total_victims":10,
+    "age_of_shooter":40,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.3300624,47.6038321 ]
+    },
+    "properties": {
+    "date":"5/20/2012",
+    "coordinates":"47.6038321, -122.3300624",
+    "year":2012,
+    "case":"Seattle cafe shooting",
+    "location":"Seattle, Washington",
+    "total_victims":7,
+    "age_of_shooter":40,
+    "weapon_type":"Two semiautomatic handguns",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -157.876462,21.320063 ]
+    },
+    "properties": {
+    "date":"11/2/1999",
+    "coordinates":"21.320063, -157.876462",
+    "year":1999,
+    "case":"Xerox killings",
+    "location":"Honolulu, Hawaii",
+    "total_victims":7,
+    "age_of_shooter":40,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"Asian",
+    "gender":"Male",
+    "type":"Spree"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -75.917723,42.099802 ]
+    },
+    "properties": {
+    "date":"4/3/2009",
+    "coordinates":"42.099802, -75.917723",
+    "year":2009,
+    "case":"Binghamton shootings",
+    "location":"Binghamton, New York",
+    "total_victims":18,
+    "age_of_shooter":41,
+    "weapon_type":"Two semiautomatic handguns",
+    "race":"Asian",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.8531119,33.7877944 ]
+    },
+    "properties": {
+    "date":"12/18/1997",
+    "coordinates":"33.7877944, -117.8531119",
+    "year":1997,
+    "case":"Caltrans maintenance yard shooting",
+    "location":"Orange, California",
+    "total_victims":7,
+    "age_of_shooter":41,
+    "weapon_type":"One rifle (assault)",
+    "race":"Latino",
+    "gender":"Male",
+    "type":"Spree"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.104119,26.119269 ]
+    },
+    "properties": {
+    "date":"2/9/1996",
+    "coordinates":"26.119269, -80.104119",
+    "year":1996,
+    "case":"Fort Lauderdale revenge shooting",
+    "location":"Fort Lauderdale, Florida",
+    "total_victims":7,
+    "age_of_shooter":41,
+    "weapon_type":"One semiautomatic handgun, one revolver",
+    "race":"black",
+    "gender":"Male",
+    "type":"Spree"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -117.0430813,32.5520013 ]
+    },
+    "properties": {
+    "date":"7/18/1984",
+    "coordinates":"32.5520013, -117.0430813",
+    "year":1984,
+    "case":"San Ysidro McDonald's massacre",
+    "location":"San Ysidro, California",
+    "total_victims":41,
+    "age_of_shooter":41,
+    "weapon_type":"One semiautomatic handgun, one rifle (assault), one shotgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.311775,25.864338 ]
+    },
+    "properties": {
+    "date":"7/26/2013",
+    "coordinates":"25.864338, -80.311775",
+    "year":2013,
+    "case":"Hialeah apartment shooting",
+    "location":"Hialeah, Florida",
+    "total_victims":7,
+    "age_of_shooter":42,
+    "weapon_type":"9mm semi-automatic handgun",
+    "race":"Latino",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.1046356,33.741176 ]
+    },
+    "properties": {
+    "date":"10/12/2011",
+    "coordinates":"33.741176, -118.1046356",
+    "year":2011,
+    "case":"Seal Beach shooting",
+    "location":"Seal Beach, California",
+    "total_victims":9,
+    "age_of_shooter":42,
+    "weapon_type":"Two semiautomatic handguns, one revolver",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.075913,42.500429 ]
+    },
+    "properties": {
+    "date":"12/26/2000",
+    "coordinates":"42.500429, -71.075913",
+    "year":2000,
+    "case":"Wakefield massacre",
+    "location":"Wakefield, Massachusetts",
+    "total_victims":7,
+    "age_of_shooter":42,
+    "weapon_type":"One semiautomatic handgun, one rifle (assault), one shotgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.655651,30.3321838 ]
+    },
+    "properties": {
+    "date":"6/18/1990",
+    "coordinates":"30.3321838, -81.655651",
+    "year":1990,
+    "case":"GMAC massacre",
+    "location":"Jacksonville, Florida",
+    "total_victims":14,
+    "age_of_shooter":42,
+    "weapon_type":"One rifle, one revolver",
+    "race":"black",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -82.596508,39.959034 ]
+    },
+    "properties": {
+    "date":"5/12/2017",
+    "coordinates":"39.959034, -82.596508",
+    "year":2017,
+    "case":"Rural Ohio nursing home shooting",
+    "location":"Kirkersville, Ohio",
+    "total_victims":3,
+    "age_of_shooter":43,
+    "weapon_type":"handgun, shotgun",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.2708166,37.8043808 ]
+    },
+    "properties": {
+    "date":"4/2/2012",
+    "coordinates":"37.8043808, -122.2708166",
+    "year":2012,
+    "case":"Oikos University killings",
+    "location":"Oakland, California",
+    "total_victims":10,
+    "age_of_shooter":43,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"Asian",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.721952,33.5598586 ]
+    },
+    "properties": {
+    "date":"9/15/1997",
+    "coordinates":"33.5598586, -81.721952",
+    "year":1997,
+    "case":"R.E. Phelon Company shooting",
+    "location":"Aiken, South Carolina",
+    "total_victims":7,
+    "age_of_shooter":43,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"black",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.393089,40.018759 ]
+    },
+    "properties": {
+    "date":"11/14/2017",
+    "coordinates":"40.018759, -122.393089",
+    "year":2017,
+    "case":"Rancho Tehama shooting spree",
+    "location":"Rancho Tehama, CA",
+    "total_victims":15,
+    "age_of_shooter":44,
+    "weapon_type":"semiautomatic rifles",
+    "race":"White",
+    "gender":"Male",
+    "type":"Spree"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -120.542237,41.487104 ]
+    },
+    "properties": {
+    "date":"2/20/2014",
+    "coordinates":"41.487104, -120.542237",
+    "year":2014,
+    "case":"Alturas tribal shooting",
+    "location":"Alturas, California",
+    "total_victims":6,
+    "age_of_shooter":44,
+    "weapon_type":"Two handguns and a butcher knife",
+    "race":"Native American",
+    "gender":"Female",
+    "type":"Spree"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -119.866069,34.425571 ]
+    },
+    "properties": {
+    "date":"1/30/2006",
+    "coordinates":"34.425571, -119.866069",
+    "year":2006,
+    "case":"Goleta postal shootings",
+    "location":"Goleta, California",
+    "total_victims":8,
+    "age_of_shooter":44,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"white",
+    "gender":"Female",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -88.1064787,43.0605671 ]
+    },
+    "properties": {
+    "date":"3/12/2005",
+    "coordinates":"43.0605671, -88.1064787",
+    "year":2005,
+    "case":"Living Church of God shooting",
+    "location":"Brookfield, Wisconsin",
+    "total_victims":11,
+    "age_of_shooter":44,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Spree"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.377839,33.850116 ]
+    },
+    "properties": {
+    "date":"7/29/1999",
+    "coordinates":"33.850116, -84.377839",
+    "year":1999,
+    "case":"Atlanta day trading spree killings",
+    "location":"Atlanta, Georgia",
+    "total_victims":22,
+    "age_of_shooter":44,
+    "weapon_type":"Three semiautomatic handguns, one revolver",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.42937037,35.6672015 ]
+    },
+    "properties": {
+    "date":"8/20/1986",
+    "coordinates":"35.6672015, -97.42937037",
+    "year":1986,
+    "case":"United States Postal Service shooting",
+    "location":"Edmond, Oklahoma",
+    "total_victims":21,
+    "age_of_shooter":44,
+    "weapon_type":"Three semiautomatic handguns",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -88.331057,41.753725 ]
+    },
+    "properties": {
+    "date":"2/15/2019",
+    "coordinates":"41.753725, -88.331057",
+    "year":2019,
+    "case":"Harry Pratt Co. warehouse shooting",
+    "location":"Aurora, IL",
+    "total_victims":11,
+    "age_of_shooter":45,
+    "weapon_type":"handgun",
+    "race":"Black",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -81.294086,28.580295 ]
+    },
+    "properties": {
+    "date":"6/5/2017",
+    "coordinates":"28.580295, -81.294086",
+    "year":2017,
+    "case":"Florida awning manufacturer shooting",
+    "location":"Orlando, Florida",
+    "total_victims":5,
+    "age_of_shooter":45,
+    "weapon_type":"semiautomatic handgun",
+    "race":"-",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -85.674795,42.236689 ]
+    },
+    "properties": {
+    "date":"2/20/2016",
+    "coordinates":"42.236689, -85.674795",
+    "year":2016,
+    "case":"Kalamazoo shooting spree",
+    "location":"Kalamazoo County, Michigan",
+    "total_victims":8,
+    "age_of_shooter":45,
+    "weapon_type":"Semiautomatic handgun",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.414592,35.333434 ]
+    },
+    "properties": {
+    "date":"3/29/2009",
+    "coordinates":"35.333434, -79.414592",
+    "year":2009,
+    "case":"Carthage nursing home shooting",
+    "location":"Carthage, North Carolina",
+    "total_victims":11,
+    "age_of_shooter":45,
+    "weapon_type":"One revolver, one shotgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -79.921398,40.443898 ]
+    },
+    "properties": {
+    "date":"10/27/2018",
+    "coordinates":"40.443898, -79.921398",
+    "year":2018,
+    "case":"Tree of Life synagogue shooting",
+    "location":"Pittsburgh, PA",
+    "total_victims":17,
+    "age_of_shooter":46,
+    "weapon_type":"semiautomatic rifle; semiautomatic handguns",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.986132,39.876374 ]
+    },
+    "properties": {
+    "date":"11/1/2017",
+    "coordinates":"39.876374, -104.986132",
+    "year":2017,
+    "case":"Walmart shooting in suburban Denver",
+    "location":"Thornton, CO",
+    "total_victims":3,
+    "age_of_shooter":47,
+    "weapon_type":"semiautomatic handgun",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -97.384246,32.664511 ]
+    },
+    "properties": {
+    "date":"9/15/1999",
+    "coordinates":"32.664511, -97.384246",
+    "year":1999,
+    "case":"Wedgwood Baptist Church shooting",
+    "location":"Fort Worth, Texas",
+    "total_victims":15,
+    "age_of_shooter":47,
+    "weapon_type":"Two semiautomatic handguns",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -85.759407,38.2542376 ]
+    },
+    "properties": {
+    "date":"9/14/1989",
+    "coordinates":"38.2542376, -85.759407",
+    "year":1989,
+    "case":"Standard Gravure shooting",
+    "location":"Louisville, Kentucky",
+    "total_victims":21,
+    "age_of_shooter":47,
+    "weapon_type":"Three semiautomatic handguns (two assault), one rifle (assault), one revolver",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -88.634539,32.410842 ]
+    },
+    "properties": {
+    "date":"7/8/2003",
+    "coordinates":"32.410842, -88.634539",
+    "year":2003,
+    "case":"Lockheed Martin shooting",
+    "location":"Meridian, Mississippi",
+    "total_victims":15,
+    "age_of_shooter":48,
+    "weapon_type":"One semiautomatic handgun, two rifles, one derringer, one shotgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.8705777,42.3810555 ]
+    },
+    "properties": {
+    "date":"10/15/1992",
+    "coordinates":"42.3810555, -76.8705777",
+    "year":1992,
+    "case":"Watkins Glen killings",
+    "location":"Watkins Glen, New York",
+    "total_victims":5,
+    "age_of_shooter":50,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.226683,25.796491 ]
+    },
+    "properties": {
+    "date":"8/20/1982",
+    "coordinates":"25.796491, -80.226683",
+    "year":1982,
+    "case":"Welding shop shooting",
+    "location":"Miami, Florida",
+    "total_victims":11,
+    "age_of_shooter":51,
+    "weapon_type":"One shotgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -90.40691,38.580093 ]
+    },
+    "properties": {
+    "date":"2/7/2008",
+    "coordinates":"38.580093, -90.40691",
+    "year":2008,
+    "case":"Kirkwood City Council shooting",
+    "location":"Kirkwood, Missouri",
+    "total_victims":8,
+    "age_of_shooter":52,
+    "weapon_type":"One semiautomatic handgun, one revolver",
+    "race":"black",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -118.916335,35.349388 ]
+    },
+    "properties": {
+    "date":"9/12/2018",
+    "coordinates":"35.349388, -118.916335",
+    "year":2018,
+    "case":"T&T Trucking shooting",
+    "location":"Bakersfield, CA",
+    "total_victims":5,
+    "age_of_shooter":54,
+    "weapon_type":"handgun",
+    "race":"Latino",
+    "gender":"Male",
+    "type":"Spree"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -122.397973,37.792968 ]
+    },
+    "properties": {
+    "date":"7/1/1993",
+    "coordinates":"37.792968, -122.397973",
+    "year":1993,
+    "case":"101 California Street shootings",
+    "location":"San Francisco, California",
+    "total_victims":15,
+    "age_of_shooter":55,
+    "weapon_type":"Three semiautomatic handguns (two assault)",
+    "race":"white",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -104.849057,38.881031 ]
+    },
+    "properties": {
+    "date":"11/27/2015",
+    "coordinates":"38.881031, -104.849057",
+    "year":2015,
+    "case":"Planned Parenthood clinic",
+    "location":"Colorado Springs, Colorado",
+    "total_victims":12,
+    "age_of_shooter":57,
+    "weapon_type":"Long gun",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -84.2135309,33.9412127 ]
+    },
+    "properties": {
+    "date":"2/21/2012",
+    "coordinates":"33.9412127, -84.2135309",
+    "year":2012,
+    "case":"Su Jung Health Sauna shooting",
+    "location":"Norcross, Georgia",
+    "total_victims":5,
+    "age_of_shooter":59,
+    "weapon_type":"One semiautomatic handgun",
+    "race":"Asian",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -80.6429695,28.0331886 ]
+    },
+    "properties": {
+    "date":"4/23/1987",
+    "coordinates":"28.0331886, -80.6429695",
+    "year":1987,
+    "case":"Shopping centers spree killings",
+    "location":"Palm Bay, Florida",
+    "total_victims":20,
+    "age_of_shooter":59,
+    "weapon_type":"One rifle, one revolver, one shotgun",
+    "race":"white",
+    "gender":"Male",
+    "type":"Spree"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -115.171544,36.095739 ]
+    },
+    "properties": {
+    "date":"10/1/2017",
+    "coordinates":"36.095739, -115.171544",
+    "year":2017,
+    "case":"Las Vegas Strip massacre",
+    "location":"Las Vegas, NV",
+    "total_victims":604,
+    "age_of_shooter":64,
+    "weapon_type":"23 firearms, mostly rifles; including scopes, and two modified for \"fully automatic\" firing; two were mounted on tripods",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -74.984891,43.045601 ]
+    },
+    "properties": {
+    "date":"3/13/2013",
+    "coordinates":"43.045601, -74.984891",
+    "year":2013,
+    "case":"Mohawk Valley shootings",
+    "location":"Herkimer County, New York",
+    "total_victims":7,
+    "age_of_shooter":64,
+    "weapon_type":"Shotgun",
+    "race":"White",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -87.879908,41.908163 ]
+    },
+    "properties": {
+    "date":"2/5/2001",
+    "coordinates":"41.908163, -87.879908",
+    "year":2001,
+    "case":"Navistar shooting",
+    "location":"Melrose Park, Illinois",
+    "total_victims":9,
+    "age_of_shooter":66,
+    "weapon_type":"Two rifles, one revolver, one shotgun",
+    "race":"black",
+    "gender":"Male",
+    "type":"Mass"
+    }
+  }
+]
+}
