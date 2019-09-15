@@ -1,0 +1,120 @@
+case,location,date,fatalities,injured,total_victims,location,age_of_shooter,prior_signs_mental_health_issues,weapons_obtained_legally,race,gender,latitude,longitude,type,year,City,State
+Rite Aid warehouse ,Perryman  MD,9/20/2018,3,3,6,Workplace,26,na,Yes,Black,F,39.455658,-76.208485,Mass,2018,Perryman,MD
+Goleta postal s,Goleta  California,1/30/2006,8,0,8,Workplace,44,Yes,Yes,white,F,34.425571,-119.866069,Mass,2006,Goleta,CA
+Alturas tribal ,Alturas  California,2/20/2014,4,2,6,Other,44,Unknown,Unknown,Native American,F,41.487104,-120.542237,Spree,2014,Alturas,CA
+Dayton entertainment district ,Dayton  OH,8/4/2019,9,27,36,Other,24,na,Yes,White,M,39.757312,-84.184947,Mass,2019,Dayton,OH
+El Paso Walmart mass ,El Paso  TX,8/3/2019,22,26,48,Workplace,21,na,Yes,White,M,31.771068,-106.375655,Mass,2019,El Paso,TX
+Gilroy garlic festival ,Gilroy  CA,7/28/2019,3,12,15,Other,19,TBD,Yes,na,M,36.997191,-121.584819,Mass,2019,Gilroy,CA
+Virginia Beach municipal building ,Virginia Beach  VA,5/31/2019,12,4,16,Workplace,40,TBD,Yes,Black,M,36.75442,-76.060378,Mass,2019,Virginia Beach,VA
+Pennsylvania hotel bar ,State College  PA,1/24/2019,3,1,4,Other,21,na,Yes,White,M,40.785142,-77.839411,Spree,2019,State College,PA
+SunTrust bank ,Sebring  FL,1/23/2019,5,0,5,Workplace,21,Yes,Yes,White,M,27.471043,-81.45847,Mass,2019,Sebring,FL
+Thousand Oaks nightclub ,Thousand Oaks  CA,11/7/2018,12,22,34,Other,28,Yes,Yes,na,M,34.176946,-118.874793,Mass,2018,Thousand Oaks,CA
+Tree of Life synagogue ,Pittsburgh  PA,10/27/2018,11,6,17,Religious,46,na,Yes,White,M,40.443898,-79.921398,Mass,2018,Pittsburgh,PA
+T&T Trucking ,Bakersfield  CA,9/12/2018,5,0,5,Workplace,54,na,Yes,Latino,M,35.349388,-118.916335,Spree,2018,Bakersfield,CA
+Fifth Third Center ,Cincinnati  OH,9/6/2018,3,2,5,Workplace,29,Yes,Yes,Latino,M,39.101981,-84.511782,Mass,2018,Cincinnati,OH
+Capital Gazette ,Annapolis  MD,6/28/2018,5,2,7,Workplace,38,na,Yes,White,M,38.994548,-76.543657,Mass,2018,Annapolis,MD
+Waffle House ,Nashville  TN,4/22/2018,4,4,8,Other,29,Yes,Yes,White,M,36.052521,-86.616944,Mass,2018,Nashville,TN
+Yountville veterans home ,Yountville  CA,3/9/2018,3,0,3,Workplace,36,Yes,Yes,Asian,M,38.392496,-122.366528,Mass,2018,Yountville,CA
+Marjory Stoneman Douglas High School ,Parkland  FL,2/14/2018,17,17,34,School,19,Yes,Yes,White,M,26.30483,-80.269511,Mass,2018,Parkland,FL
+Las Vegas Strip massacre,Las Vegas  NV,10/1/2017,58,546,604,Other,64,TBD,Yes,White,M,36.095739,-115.171544,Mass,2017,Las Vegas,NV
+Fort Lauderdale airport ,Fort Lauderdale  Florida,1/6/2017,5,6,11,Airport,26,Yes,Yes,Latino,M,26.072751,-80.143382,Mass,2017,Fort Lauderdale,FL
+Dallas police ,Dallas  Texas,7/7/2016,5,11,16,Other,25,Unclear,Yes,Black,M,32.7801052,-96.8000082,Mass,2016,Dallas,TX
+Orlando nightclub massacre,Orlando  Florida,6/12/2016,49,53,102,Other,29,Unclear,Yes,Other,M,28.519718,-81.376777,Mass,2016,Orlando,FL
+Excel Industries mass ,Hesston  Kansas,2/25/2016,3,14,17,Workplace,38,Unclear,Yes,Black,M,38.135992,-97.425145,Mass,2016,Hesston,KS
+Kalamazoo  spree,Kalamazoo County  Michigan,2/20/2016,6,2,8,Other,45,Unclear,Yes,White,M,42.236689,-85.674795,Mass,2016,Kalamazoo County,MI
+Colorado Springs  rampage,Colorado Springs  Colorado,10/31/2015,3,0,3,Other,33,Unclear,Yes,White ,M,38.83755,-104.814251,Mass,2015,Colorado Springs,CO
+Trestle Trail bridge ,Menasha  Wisconsin,6/11/2015,3,1,4,Other,27,Yes,Yes,Latino,M,44.204124,-88.467541,Mass,2015,Menasha,WI
+Isla Vista mass murder,Santa Barbara  California,5/23/2014,6,13,19,School,22,Yes,Yes,White,M,34.436283,-119.8714406,Mass,2014,Santa Barbara,CA
+Fresno downtown ,Fresno  California,4/18/2017,3,0,3,Other,39,Unclear,Unknown,Black,M,36.746378,-119.800319,Mass,2017,Fresno,CA
+Baton Rouge police ,Baton Rouge  Lousiana,7/17/2016,3,3,6,Other,29,Yes,Unknown,Black,M,30.433601,-91.081403,Spree,2016,Baton Rouge,LA
+Planned Parenthood clinic,Colorado Springs  Colorado,11/27/2015,3,9,12,Workplace,57,Unclear,Unknown,White,M,38.881031,-104.849057,Mass,2015,Colorado Springs,CO
+Santa Fe High School ,Santa Fe  TX,5/18/2018,10,13,23,School,17,na,TBD,White,M,29.392825,-95.141972,Mass,2018,Santa Fe,TX
+Pennsylvania carwash ,Melcroft  PA,1/28/2018,4,1,5,Other,28,TBD,TBD,White,M,40.052151,-79.389166,Mass,2018,Melcroft,PA
+Walmart  in suburban Denver,Thornton  CO,11/1/2017,3,0,3,Other,47,Unclear,TBD,White,M,39.876374,-104.986132,Mass,2017,Thornton,CO
+Pennsylvania supermarket ,Tunkhannock  Pennsylvania,6/7/2017,3,0,3,Workplace,24,Unclear,TBD,White,M,41.529546,-75.94722,Mass,2017,Tunkhannock,PA
+Florida awning manufacturer ,Orlando  Florida,6/5/2017,5,0,5,Workplace,45,Unclear,TBD,na,M,28.580295,-81.294086,Mass,2017,Orlando,FL
+Rural Ohio nursing home ,Kirkersville  Ohio,5/12/2017,3,0,3,Workplace,43,Yes,TBD,White,M,39.959034,-82.596508,Mass,2017,Kirkersville,OH
+Cascade Mall ,Burlington  Washington,9/23/2016,5,0,5,Other,20,Yes,TBD,na,M,48.461367,-122.337918,Mass,2016,Burlington,WA
+Harry Pratt Co. warehouse ,Aurora  IL,2/15/2019,5,6,11,Workplace,45,Yes,No,Black,M,41.753725,-88.331057,Mass,2019,Aurora,IL
+Rancho Tehama  spree,Rancho Tehama  CA,11/14/2017,5,10,15,Other,44,TBD,No,White,M,40.018759,-122.393089,Spree,2017,Rancho Tehama,CA
+Edgewood businees park ,Edgewood  MD,10/18/2017,3,3,6,Workplace,37,Unclear,No,Black,M,39.452189,-76.309988,Mass,2017,Edgewood,MD
+San Francisco UPS ,San Francisco  CA,6/14/2017,3,2,5,Workplace,38,Yes,No,Asian,M,37.765947,-122.406087,Mass,2017,San Francisco,CA
+Texas First Baptist Church massacre,Sutherland Springs  TX,11/5/2017,26,20,46,Religious,26,Yes,TBD,White,M,29.273282,-98.056488,Mass,2017,Sutherland Springs,TX
+Fort Hood  2,Fort Hood  Texas,4/3/2014,3,12,15,Military,34,Unclear,"
+Yes",Latino,M,31.141716,-97.777559,Mass,2014,Fort Hood,TX
+Mercy Hospital ,Chicago  IL,11/19/2018,3,0,3,Workplace,32,na,-,Latino,M,41.847667,-87.622009,Mass,2018,Chicago,IL
+Chattanooga military recruitment center,Chattanooga  Tennessee,7/16/2015,5,2,7,Military,24,Unclear,Yes*,Other,M,35.047157,-85.311819,Mass,2015,Chattanooga,TN
+Santa Monica rampage,Santa Monica  California,6/7/2013,6,3,9,Other,23,Yes,Yes ,White,M,34.008617,-118.494754,Mass,2013,Santa Monica,CA
+Umpqua Community College ,Roseburg  Oregon,10/1/2015,9,9,18,School,26,Unclear,Yes,Other,M,43.289538,-123.333193,Mass,2015,Roseburg,OR
+Charleston Church ,Charleston  South Carolina,6/17/2015,9,1,10,Religious,21,Unclear,Yes,White,M,32.788387,-79.933143,Mass,2015,Charleston,SC
+Washington Navy Yard ,Washington  D.C.,9/16/2013,12,8,20,Military,34,Yes,Yes,Black,M,38.874981,-76.99453,Mass,2013,Washington,DC
+Hialeah apartment ,Hialeah  Florida,7/26/2013,7,0,7,"Other
+",42,Unclear,Yes,Latino,M,25.864338,-80.311775,Mass,2013,Hialeah,FL
+Pinewood Village Apartment ,Federal Way  Washington,4/21/2013,5,0,5,"Other
+",27,No,Yes,Black,M,47.3129607,-122.3393665,Mass,2013,Federal Way,WA
+Mohawk Valley s,Herkimer County  New York,3/13/2013,5,2,7,Other,64,No,Yes,White,M,43.045601,-74.984891,Mass,2013,Herkimer County,NY
+Accent Signage Systems ,Minneapolis  Minnesota,9/27/2012,7,1,8,Workplace,36,Yes,Yes,white,M,44.977425,-93.310408,Mass,2012,Minneapolis,MN
+Sikh temple ,Oak Creek  Wisconsin,8/5/2012,7,3,10,Religious,40,Yes,Yes,white,M,42.8858503,-87.8631362,Mass,2012,Oak Creek,WI
+Aurora theater ,Aurora  Colorado,7/20/2012,12,70,82,Other,24,Yes,Yes,white,M,39.706038,-104.820594,Spree,2012,Aurora,CO
+Seattle cafe ,Seattle  Washington,5/20/2012,6,1,7,Other,40,Yes,Yes,white,M,47.6038321,-122.3300624,Mass,2012,Seattle,WA
+Oikos University killings,Oakland  California,4/2/2012,7,3,10,School,43,Yes,Yes,Asian,M,37.8043808,-122.2708166,Mass,2012,Oakland,CA
+Su Jung Health Sauna ,Norcross  Georgia,2/21/2012,5,0,5,Other,59,Yes,Yes,Asian,M,33.9412127,-84.2135309,Mass,2012,Norcross,GA
+Seal Beach ,Seal Beach  California,10/12/2011,8,1,9,Other,42,Yes,Yes,white,M,33.741176,-118.1046356,Mass,2011,Seal Beach,CA
+IHOP ,Carson City  Nevada,9/6/2011,5,7,12,Other,32,Yes,Yes,Latino,M,39.1637984,-119.7674034,Mass,2011,Carson City,NV
+Tucson ,Tucson  Arizona,1/8/2011,6,13,19,Other,22,Yes,Yes,white,M,32.335941,-110.975132,Mass,2011,Tucson,AZ
+Hartford Beer Distributor ,Manchester  Connecticut,8/3/2010,9,2,11,Workplace,34,No,Yes,black,M,41.798764,-72.570068,Mass,2010,Manchester,CT
+Fort Hood massacre,Fort Hood  Texas,11/5/2009,13,30,43,Military,39,Unclear,Yes,Other,M,31.135557,-97.783664,Mass,2009,Fort Hood,TX
+Binghamton s,Binghamton  New York,4/3/2009,14,4,18,Other,41,Yes,Yes,Asian,M,42.099802,-75.917723,Mass,2009,Binghamton,NY
+Carthage nursing home ,Carthage  North Carolina,3/29/2009,8,3,11,Other,45,Yes,Yes,white,M,35.333434,-79.414592,Mass,2009,Carthage,NC
+Atlantis Plastics ,Henderson  Kentucky,6/25/2008,6,1,7,Workplace,25,No,Yes,white,M,37.76721,-87.5573742,Spree,2008,Henderson,KY
+Northern Illinois University ,DeKalb  Illinois,2/14/2008,5,21,26,School,27,Yes,Yes,white,M,41.9294736,-88.7503647,Mass,2008,DeKalb,IL
+Crandon ,Crandon  Wisconsin,10/7/2007,6,1,7,Other,20,Unclear,Yes,white,M,45.5719072,-88.9028922,Mass,2007,Crandon,WI
+Virginia Tech massacre,Blacksburg  Virginia,4/16/2007,32,23,55,School,23,Yes,Yes,Asian,M,37.2295733,-80.4139393,Mass,2007,Blacksburg,VA
+Amish school ,Lancaster County  Pennsylvania,10/2/2006,6,5,11,School,32,No,Yes,white,M,39.9589,-76.0806,Mass,2006,Lancaster County,PA
+Capitol Hill massacre,Seattle  Washington,3/25/2006,7,2,9,Other,28,No,Yes,white,M,47.6229,-122.3165,Mass,2006,Seattle,WA
+Living Church of God ,Brookfield  Wisconsin,3/12/2005,7,4,11,Religious,44,Yes,Yes,white,M,43.0605671,-88.1064787,Spree,2005,Brookfield,WI
+Damageplan show ,Columbus  Ohio,12/8/2004,5,7,12,Other,25,Yes,Yes,white,M,39.9622601,-83.0007065,Mass,2004,Columbus,OH
+Lockheed Martin ,Meridian  Mississippi,7/8/2003,7,8,15,Workplace,48,Yes,Yes,white,M,32.410842,-88.634539,Mass,2003,Meridian,MS
+Navistar ,Melrose Park  Illinois,2/5/2001,5,4,9,Workplace,66,No,Yes,black,M,41.908163,-87.879908,Mass,2001,Melrose Park,IL
+Wakefield massacre,Wakefield  Massachusetts,12/26/2000,7,0,7,Workplace,42,Yes,Yes,white,M,42.500429,-71.075913,Mass,2000,Wakefield,MA
+Hotel ,Tampa  Florida,12/30/1999,5,3,8,Workplace,36,Yes,Yes,Latino,M,27.966479,-82.570586,Spree,1999,Tampa,FL
+Xerox killings,Honolulu  Hawaii,11/2/1999,7,0,7,Workplace,40,Yes,Yes,Asian,M,21.320063,-157.876462,Spree,1999,Honolulu,HI
+Wedgwood Baptist Church ,Fort Worth  Texas,9/15/1999,8,7,15,Religious,47,Yes,Yes,white,M,32.664511,-97.384246,Mass,1999,Fort Worth,TX
+Atlanta day trading spree killings,Atlanta  Georgia,7/29/1999,9,13,22,Workplace,44,Yes,Yes,white,M,33.850116,-84.377839,Mass,1999,Atlanta,GA
+Connecticut Lottery ,Newington  Connecticut,3/6/1998,5,1,6,Workplace,35,Yes,Yes,white,M,41.6856325,-72.72983827,Mass,1998,Newington,CT
+Caltrans maintenance yard ,Orange  California,12/18/1997,5,2,7,Workplace,41,No,Yes,Latino,M,33.7877944,-117.8531119,Spree,1997,Orange,CA
+Fort Lauderdale revenge ,Fort Lauderdale  Florida,2/9/1996,6,1,7,Workplace,41,Yes,Yes,black,M,26.119269,-80.104119,Spree,1996,Fort Lauderdale,FL
+Walter Rossler Company massacre,Corpus Christi  Texas,4/3/1995,6,0,6,Workplace,28,No,Yes,unclear,M,27.828025,-97.548198,Mass,1995,Corpus Christi,TX
+Air Force base ,Fairchild Air Force Base  Washington,6/20/1994,5,23,28,Military,20,Yes,Yes,white,M,47.61864486,-117.6483587,Mass,1994,Fairchild Air Force Base,WA
+Long Island Rail Road massacre,Garden City  New York,12/7/1993,6,19,25,Other,35,Yes,Yes,black,M,40.7267682,-73.6342955,Spree,1993,Garden City,NY
+Luigi's ,Fayetteville  North Carolina,8/6/1993,4,8,12,Other,22,No,Yes,white,M,35.0529931,-78.8787058,Mass,1993,Fayetteville,NC
+Watkins Glen killings,Watkins Glen  New York,10/15/1992,5,0,5,Other,50,Yes,Yes,white,M,42.3810555,-76.8705777,Mass,1992,Watkins Glen,NY
+Lindhurst High School ,Olivehurst  California,5/1/1992,4,10,14,School,20,No,Yes,white,M,39.07868761,-121.5475762,Mass,1992,Olivehurst,CA
+Royal Oak postal s,Royal Oak  Michigan,11/14/1991,5,5,10,Workplace,31,Yes,Yes,white,M,42.4894801,-83.1446485,Mass,1991,Royal Oak,MI
+University of Iowa ,Iowa City  Iowa,11/1/1991,6,1,7,School,28,Unclear,Yes,Asian,M,41.6606893,-91.5302214,Spree,1991,Iowa City,IA
+Luby's massacre,Killeen  Texas,10/16/1991,24,20,44,Other,35,No,Yes,white,M,31.1171194,-97.7277959,Mass,1991,Killeen,TX
+GMAC massacre,Jacksonville  Florida,6/18/1990,10,4,14,Other,42,No,Yes,black,M,30.3321838,-81.655651,Mass,1990,Jacksonville,FL
+Standard Gravure ,Louisville  Kentucky,9/14/1989,9,12,21,Workplace,47,Yes,Yes,white,M,38.2542376,-85.759407,Mass,1989,Louisville,KY
+Stockton schoolyard ,Stockton  California,1/17/1989,6,29,35,School,26,Yes,Yes,white,M,37.9577016,-121.2907796,Mass,1989,Stockton,CA
+ESL ,Sunnyvale  California,2/16/1988,7,4,11,Workplace,39,Yes,Yes,white,M,37.3688301,-122.0363496,Mass,1988,Sunnyvale,CA
+Shopping centers spree killings,Palm Bay  Florida,4/23/1987,6,14,20,Other,59,Yes,Yes,white,M,28.0331886,-80.6429695,Spree,1987,Palm Bay,FL
+United States Postal Service ,Edmond  Oklahoma,8/20/1986,15,6,21,Workplace,44,Unclear ,Yes,white,M,35.6672015,-97.42937037,Mass,1986,Edmond,OK
+San Ysidro McDonald's massacre,San Ysidro  California,7/18/1984,22,19,41,Other,41,Yes,Yes,white,M,32.5520013,-117.0430813,Mass,1984,San Ysidro,CA
+Welding shop ,Miami  Florida,8/20/1982,8,3,11,Other,51,Yes,Yes,white,M,25.796491,-80.226683,Mass,1982,Miami,FL
+Trolley Square ,Salt Lake City  Utah,2/12/2007,6,4,10,Other,18,Unclear,Unknown,white,M,40.7606467,-111.89109,Mass,2007,Salt Lake City,UT
+Chuck E. Cheese's killings,Aurora  Colorado,12/14/1993,4,1,5,Workplace,19,Unclear,Unknown,black,M,39.675599,-104.844845,Mass,1993,Aurora,CO
+Marysville-Pilchuck High School ,Marysville  Washington,10/24/2014,5,1,6,School,15,Unclear,No,Native American,M,48.050824,-122.176918,Mass,2014,Marysville,WA
+Sandy Hook Elementary massacre,Newtown  Connecticut,12/14/2012,27,2,29,School,20,Yes,No,white,M,41.4123225,-73.31142358,Mass,2012,Newtown,CT
+Coffee shop police killings,Parkland  Washington,11/29/2009,4,1,5,Other,37,Yes,No,black,M,47.15277,-122.467308,Mass,2009,Parkland,WA
+Kirkwood City Council ,Kirkwood  Missouri,2/7/2008,6,2,8,Other,52,No,No,black,M,38.580093,-90.40691,Mass,2008,Kirkwood,MO
+Westroads Mall ,Omaha  Nebraska,12/5/2007,9,4,13,Other,19,Yes,No,white,M,41.265719,-96.067495,Spree,2007,Omaha,NE
+Red Lake massacre,Red Lake  Minnesota,3/21/2005,10,5,15,School,16,Yes,No,Native American,M,47.876346,-95.0169401,Mass,2005,Red Lake,MN
+Columbine High School massacre,Littleton  Colorado,4/20/1999,13,24,37,School,17,Yes,No,white,M,39.604034,-105.074103,Mass,1999,Littleton,CO
+Thurston High School ,Springfield  Oregon,5/21/1998,4,25,29,School,15,Yes,No,white,M,44.0462362,-123.0220289,Mass,1998,Springfield,OR
+Westside Middle School killings,Jonesboro  Arkansas,3/24/1998,5,10,15,School,11,No,No,white,M,35.8209895,-90.6682606,Mass,1998,Jonesboro,AR
+R.E. Phelon Company ,Aiken  South Carolina,9/15/1997,4,3,7,Workplace,43,No,No,black,M,33.5598586,-81.721952,Mass,1997,Aiken,SC
+101 California Street s,San Francisco  California,7/1/1993,9,6,15,Other,55,No,No,white,M,37.792968,-122.397973,Mass,1993,San Francisco,CA
+Dallas nightclub ,Dallas  Texas,6/29/1984,6,1,7,Other,39,Yes,No,white,M,32.925166,-96.838676,Mass,1984,Dallas,TX
+San Bernardino mass ,San Bernardino  California,12/2/2015,14,21,35,"
+Workplace",28,Unclear,"
+Yes",Other,both,34.075961,-117.27789,Mass,2015,San Bernardino,CA
