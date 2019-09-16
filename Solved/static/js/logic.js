@@ -43,8 +43,7 @@ d3.json(stateoutline, function(data) {
 
     // Binding a pop-up to each layer
     onEachFeature: function(feature, layer) {
-      layer.bindPopup(feature.properties.GEO_ID + ", " + feature.properties.NAME + "<br>Gun Ownership:<br>" +
-        "$" + feature.properties.gunOwnership);
+      layer.bindPopup(feature.properties.NAME + "<br>Gun Ownership:<br>" + feature.properties.gunOwnership);
     }
   }).addTo(myMap);
 
