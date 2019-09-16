@@ -1,4 +1,4 @@
-var myMap = L.map("map", {
+var myMap = L.map("d3map", {
     center: [37.7749, -122.4194],
     zoom: 13
   });
