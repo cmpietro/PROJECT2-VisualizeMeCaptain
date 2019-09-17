@@ -1,5 +1,5 @@
 // Creating map object
-var myMap = L.map("map", {
+var myMap = L.map("OCMap", {
   center: [39.8283, -98.5795],
   zoom: 5
 });
@@ -45,7 +45,7 @@ d3.json(stateoutline, function(data) {
     onEachFeature: function(feature, layer) {
       layer.bindPopup(feature.properties.NAME + "<br>FBI UCR Number of Weapons Offenses:<br>" + feature.properties.offCT);
     }
-  }).addTo(myMap);
+  }).addTo(OCMap);
 
   // Set up the legend
   var legend = L.control({ position: "bottomright" });
@@ -73,6 +73,6 @@ d3.json(stateoutline, function(data) {
   };
 
   // Adding legend to the map
-  legend.addTo(myMap);
+  legend.addTo(OCMap);
 
 });

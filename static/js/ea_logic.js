@@ -1,5 +1,5 @@
 // Creating map object
-var myMap = L.map("map", {
+var myMap = L.map("EAMap", {
   center: [39.8283, -98.5795],
   zoom: 5
 });
@@ -9,7 +9,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
   attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
   maxZoom: 18,
   id: "mapbox.streets",
-  accessToken: API-KEY,
+  accessToken: API_KEY,
 }).addTo(myMap);
 
 // Link to GeoJSON
@@ -46,7 +46,7 @@ d3.json(stateoutline, function(data) {
       layer.bindPopup(feature.properties.GEO_ID + ", " + feature.properties.NAME + "<br>Gun Ownership:<br>" +
         "$" + feature.properties.gunOwnership);
     }
-  }).addTo(myMap);
+  }).addTo(EAMap);
 
   // Set up the legend
   var legend = L.control({ position: "bottomright" });
@@ -74,6 +74,6 @@ d3.json(stateoutline, function(data) {
   };
 
   // Adding legend to the map
-  legend.addTo(myMap);
+  legend.addTo(EAMap);
 
 });
