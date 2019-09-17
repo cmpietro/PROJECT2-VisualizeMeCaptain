@@ -89,6 +89,9 @@ footer {
 #map{
   display: block;
   margin: auto;
+  width: 960px;
+  height: 500px;
+
 }
 #slider{
   display: block;

@@ -9,34 +9,44 @@
   <meta name="author" content="">
 
   <title>Gun Headlines: PROJECT2</title>
-  <!-- Bootstrap CSS -->
+  
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<!-- Bootstrap core CSS -->  <!-- PLACE HOLDER-->
-<!--<link href="static/css/bootstrap.css" rel="stylesheet">-->
 
-<!-- Custom styles for this template -->  <!---  these are inspirational style  --->
-<!-- <link rel="stylesheet" type="text/css" href="static/css/scrolling-nav.css"> -->
-<!-- Our CSS -->
-<link rel="stylesheet" type="text/css" href="static/css/style.css">
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
 
-<!-- Scripting links -->  <!--- DO WE NEED THESE  --->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!-- Scripting links -->  <!--- which do we need?  --->
+<!-- jQuery first, then Popper.js -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+  
+<!--GUN OWNERSHIP CHOROPLETH-->
+  <!-- Leaflet CSS & JS-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+ <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+  integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+  crossorigin=""></script>
+
+<!-- d3 JavaScript -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<!-- Leaflet-Choropleth JavaScript -->
+<script type="text/javascript" src="static/js/ea_choropleth.js"></script>
+
 </head>
 
 <!--BODY-->
 <body id="page-top">
 
   <div id="plot"></div>
-    <script href="static/js/heatmap.js"></script>
-    <script href="static/js/leaflet-heat.js"></script>
+    <!--<script href="static/js/heatmap.js"></script>
+    <script href="static/js/leaflet-heat.js"></script> -->
     
     <!--This is for the NEWS Section-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-     
     <script href="news_fetch.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <!-- Leaflet JS & CSS -->  <!--- IS this WHAT we want?  --->
@@ -46,13 +56,12 @@ crossorigin=""/>
 <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
 integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
 crossorigin=""></script>  -->
-<!-- d3 JavaScript -->
-<!--<script src="https://d3js.org/d3.v4.min.js"></script> -->
+
 <!-- API key -->
-  <!--<script type="text/javascript" src="static/js/config.js"></script> -->
+  <script type="text/javascript" src="static/config/config.js"></script>
   
     <!-- JS  -->
-  <script type="text/javascript" href="static/js/logic.js"></script>
+  <!--<script type="text/javascript" href="static/js/logic.js"></script> -->
   <!-- <script type="text/javascript" src="static/js/logic2.js"></script> -->
   <!-- <script type="text/javascript" src="static/js/logic3.js"></script> -->
   <!-- <script type="text/javascript" src="static/js/logic4.js"></script> -->
@@ -76,9 +85,9 @@ crossorigin=""></script>  -->
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#staticviews">Static Views</a>
             </li>
-            <!--<li class="nav-item">
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#newsjs">Current News</a>
-            </li>-->
+            </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#conclusions">Four Conclusions</a>
             </li>
@@ -157,6 +166,7 @@ crossorigin=""></script>  -->
                     gather the data on what mass shooters have in common. Every mass shooter, at the very least, needs
                     a gun. Locating the relationship between gun location and gun violence is a step forward in the complex 
                     problem of mass shootings in America."</p>
+                    <p><a href="ian.html">Gun Ownership</a></p>
                   </div>
                 </div>
               </div>
@@ -164,25 +174,19 @@ crossorigin=""></script>  -->
          </section>  
                 
         <!-- Section for D3 map -->
-      <section id="d3Map" class="bg-light">
+      <section id="EAMap" class="bg-light">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 mx-auto">
               <div class="greybox">
-                <h2>Gun Violence Mapped: Interactive Mapping of Four Datasets</h2>
-                  <p class="lead"> STATEMENT OF USE of MAP --- FOUR VIEWS.</p>
-                  
+                <h2>Gun Violence Mapped: Interactive Mapping of Gun Violence</h2>
+                  <p class="lead"> Map One: Gun Ownership</p>
               </div>
-              <div class="spacer" style="height:200px"></div>
-  
-              <p class="lead">Click on a state to explore STATE-level data and use the slider to see how rates have changed over time.</p>
+              <!--<div class="spacer" style="height:200px"></div> -->
               <div class = map-container style="position: relative">
-                <div style="position: absolute; top:0; width: 150px;">
-                  
-                  
-                  
+              <div style="position: absolute; top:960; width: 500;">
                   <!-- <p>Fatality Category:</p> -->
-                  <select id = "layers">
+                  <!--<select id = "layers">
                     <option value="Mortality" selected="selected">Mortality</option>
                     <option value="Mass Shooting">Mass Shooting</option>
                     <option value="Gun Ownership">Gun Ownership</option>
@@ -192,18 +196,42 @@ crossorigin=""></script>  -->
                   <span class="dot"></span><br><br>
                   <svg id="legend-svg"></svg>
                   <div class="legendNote" width="100px" height="50px">
-                    <p>Deaths per % of population <br>population</p>
+                    <p>Deaths per % of population <br>population</p> -->
                   </div>
                 </div>
                 <div>
-                  <svg id = "map" width = "960" height = "500" ></svg>
+                    <div id="EAMap" width = "960" height = "500"></div>
+                    <svg id = "EAMap" width = "900" height = "500" ></svg>
                 </div>
               </div>
-              <script  src="static/js/heatmap.js"></script>
+              <script type="text/javascript" src="static/js/ea_logic.js"></script>
             </div>
           </div>
         </div>
         </section>
+        <!--OC: AOTHER MAP LAYER -->
+        <section id="OCMap" class="bg-light">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 mx-auto">
+                  <div class="greybox">
+                    <h2>Gun Violence Mapped: Interactive Mapping of Gun Violence</h2>
+                      <p class="lead"> Map Two: OC Map</p>
+                  </div>
+                    <div class = map-container style="position: relative">
+                    <div style="position: absolute; top:960; width: 500;"></div>
+                    <!--<div class="spacer" style="height:200px"></div> -->
+                      <div id="OCMap" width = "960" height = "500"></div>
+                      <svg id = "OCMap" width = "900" height = "500" ></svg>
+
+                    </div>
+                  </div>
+                  
+                  <script type="text/javascript" src="static/js/oc_logic.js"></script>
+                </div>
+              </div>
+            </div>
+            </section>
         <!--STATIC VISUALIZATIONS-->
         <section id='staticviews' class="container">
             <div class="container">
@@ -358,6 +386,10 @@ crossorigin=""></script>  -->
                       <div class="spacer" style="height:25px"></div>
                       <div class='col-md-12 col-md-12'>
                       <h3 class="title">Resources Used:</h3>
+                          <p>Data Used</p>
+                          <a href="https://www.motherjones.com/politics/2012/12/mass-shootings-mother-jones-full-data/" target="_blank">Mother Jones</a>
+                          <a href="https://github.com/fivethirtyeight/guns-data" target='_blank'>538 Gun Violence GitHub</a>
+                          <p> Static Views </p>
                           <a href="https://www.thetrace.org/features/gun-violence-interactive-shootings-map/" target="_blank">Static View 1: The Trace</a>
                           <br>
                           <a href="https://www.nytimes.com/2018/02/15/us/6-stories-and-charts-to-help-you-better-understand-gun-violence.html" target="_blank">Static View 2: New York Times</a>
