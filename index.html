@@ -10,12 +10,13 @@
 
   <title>Gun Headlines: PROJECT2</title>
   
+  
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="static/css/style.css">
-
+  
 <!-- Scripting links -->  <!--- which do we need?  --->
 <!-- jQuery first, then Popper.js -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -23,10 +24,10 @@
   
 <!--GUN OWNERSHIP CHOROPLETH-->
   <!-- Leaflet CSS & JS-->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
   crossorigin=""/>
- <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
   crossorigin=""></script>
 
@@ -42,9 +43,7 @@
 <body id="page-top">
 
   <div id="plot"></div>
-    <!--<script href="static/js/heatmap.js"></script>
-    <script href="static/js/leaflet-heat.js"></script> -->
-    
+  
     <!--This is for the NEWS Section-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script href="news_fetch.js"></script>
@@ -154,10 +153,7 @@ crossorigin=""></script>  -->
                     based on victim count were Nevada, California, Texas, Florida and Colorado.
                     Lastly a review of the total number of weapons registered as of 2019 found the top five states with the most 
                     weapons registered to be Texas, Florida, California, Virginia, and Pennsylvania."</p>
-                    <p><a href="mj.html">Mother Jones</a></p>
-                    <p><a href="oc.html">FBI UCR Weapons Offenses</a></p>
-                    <p><a href="rw.html">Registered Weapons</a></p>
-                  </div>
+                </div>
                 <div class="spacer" style="height:25px"></div>
                 <div class='col-md-12 col-md-12'>
                 <h3 class="title">Ian's View</h3>
@@ -166,7 +162,7 @@ crossorigin=""></script>  -->
                     gather the data on what mass shooters have in common. Every mass shooter, at the very least, needs
                     a gun. Locating the relationship between gun location and gun violence is a step forward in the complex 
                     problem of mass shootings in America."</p>
-                    <p><a href="ian.html">Gun Ownership</a></p>
+                    
                   </div>
                 </div>
               </div>
@@ -174,64 +170,41 @@ crossorigin=""></script>  -->
          </section>  
                 
         <!-- Section for D3 map -->
-      <section id="EAMap" class="bg-light">
+      <section id="d3Map" class="bg-light">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 mx-auto">
               <div class="greybox">
                 <h2>Gun Violence Mapped: Interactive Mapping of Gun Violence</h2>
-                  <p class="lead"> Map One: Gun Ownership</p>
+                  <p class="lead"> Select a Map Topic to View</p>
               </div>
               <!--<div class="spacer" style="height:200px"></div> -->
-              <div class = map-container style="position: relative">
-              <div style="position: absolute; top:960; width: 500;">
-                  <!-- <p>Fatality Category:</p> -->
-                  <!--<select id = "layers">
-                    <option value="Mortality" selected="selected">Mortality</option>
-                    <option value="Mass Shooting">Mass Shooting</option>
-                    <option value="Gun Ownership">Gun Ownership</option>
-                    <option value="FBI Violent Crimes">FBI Violent Crimes</option>
-                  </select><br><br>
-                  <input type="checkbox" id="showShootings" checked="checked"> Show Mass Shooting Events <br>
-                  <span class="dot"></span><br><br>
-                  <svg id="legend-svg"></svg>
-                  <div class="legendNote" width="100px" height="50px">
-                    <p>Deaths per % of population <br>population</p> -->
+                <br><br>
+                   <div class="row">
+                      <div class="col-4">
+                        <div class="list-group" id="list-tab" role="tablist">
+                          <a class="list-group-item list-group-item-action active" id="list-go-list" data-toggle="list" href="ian.html" role="tab" aria-controls="go">Gun Ownership</a>
+                          <a class="list-group-item list-group-item-action" id="list-ms-list" data-toggle="list" href="mj.html" role="tab" aria-controls="ms">Mass Shootings</a>
+                          <a class="list-group-item list-group-item-action" id="list-oc-list" data-toggle="list" href="oc.html" role="tab" aria-controls="oc">FBI Uniform Crime Data</a>
+                          <a class="list-group-item list-group-item-action" id="list-rw-list" data-toggle="list" href="rw.html" role="tab" aria-controls="rw">Registered Weapons</a>
+                        </div>
+                      </div>
+                      <div class="col-8">
+                        <div class="tab-content" id="nav-tabContent">
+                          <div class="tab-pane fade show active" id="list-go" role="tabpanel" aria-labelledby="list-go-list">'The total number of guns owned '</div>
+                          <div class="tab-pane fade" id="list-ms" role="tabpanel" aria-labelledby="list-ms-list">'Mass Shooting Victims'</div>
+                          <div class="tab-pane fade" id="list-oc" role="tabpanel" aria-labelledby="list-oc-list">'Number of Weapons Offenses'</div>
+                          <div class="tab-pane fade" id="list-rw" role="tabpanel" aria-labelledby="list-rw-list">'Number of Registered Weapons by State'</div>
+                        </div>
+                      </div>
+                    </div>                  
                   </div>
-                </div>
-                <div>
-                    <div id="EAMap" width = "960" height = "500"></div>
-                    <svg id = "EAMap" width = "900" height = "500" ></svg>
-                </div>
-              </div>
-              <script type="text/javascript" src="static/js/ea_logic.js"></script>
+                           
             </div>
           </div>
         </div>
         </section>
-        <!--OC: AOTHER MAP LAYER -->
-        <section id="OCMap" class="bg-light">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12 mx-auto">
-                  <div class="greybox">
-                    <h2>Gun Violence Mapped: Interactive Mapping of Gun Violence</h2>
-                      <p class="lead"> Map Two: OC Map</p>
-                  </div>
-                    <div class = map-container style="position: relative">
-                    <div style="position: absolute; top:960; width: 500;"></div>
-                    <!--<div class="spacer" style="height:200px"></div> -->
-                      <div id="OCMap" width = "960" height = "500"></div>
-                      <svg id = "OCMap" width = "900" height = "500" ></svg>
-
-                    </div>
-                  </div>
-                  
-                  <script type="text/javascript" src="static/js/oc_logic.js"></script>
-                </div>
-              </div>
-            </div>
-            </section>
+        <div class="spacer" style="height:200px"></div>
         <!--STATIC VISUALIZATIONS-->
         <section id='staticviews' class="container">
             <div class="container">

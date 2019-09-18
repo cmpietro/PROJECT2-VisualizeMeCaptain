@@ -1,5 +1,5 @@
 // Creating map object
-var myMap = L.map("EAMap", {
+var myMap = L.map("map", {
   center: [39.8283, -98.5795],
   zoom: 5
 });
@@ -46,7 +46,7 @@ d3.json(stateoutline, function(data) {
       layer.bindPopup(feature.properties.GEO_ID + ", " + feature.properties.NAME + "<br>Gun Ownership:<br>" +
         "$" + feature.properties.gunOwnership);
     }
-  }).addTo(EAMap);
+  }).addTo(myMap);
 
   // Set up the legend
   var legend = L.control({ position: "bottomright" });
@@ -74,6 +74,6 @@ d3.json(stateoutline, function(data) {
   };
 
   // Adding legend to the map
-  legend.addTo(EAMap);
+  legend.addTo(myMap);
 
 });
