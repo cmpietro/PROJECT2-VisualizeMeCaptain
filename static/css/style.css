@@ -35,7 +35,7 @@ header p{
 
 .greybox{
   width: 100%;
-  background-color: #708090!important;
+  background-color: #708090;
   color: #fff;
   padding: 8px;
 }
@@ -60,6 +60,12 @@ a {
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+}
+
+.list-group-item-action{
+    color: #BAC4C8;
+    background-color: #7F2626;
+    border-color: #7F2626;
 }
 
 legend {
