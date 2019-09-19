@@ -1,0 +1,51 @@
+{"_id":{"$oid":"5d7b002b556b2c239c06bd35"},"State":"Alaska","State_ABV":"AK","gunOwnership":"0.617","Pop":"735720"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd36"},"State":"Arkansas","State_ABV":"AR","gunOwnership":"0.579","Pop":"3026412"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd37"},"State":"Idaho","State_ABV":"ID","gunOwnership":"0.569","Pop":"1790182"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd38"},"State":"West Virginia","State_ABV":"WV","gunOwnership":"0.542","Pop":"1791951"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd39"},"State":"Wyoming","State_ABV":"WY","gunOwnership":"0.538","Pop":"572381"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd3a"},"State":"Montana","State_ABV":"MT","gunOwnership":"0.523","Pop":"1074532"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd3b"},"State":"New Mexico","State_ABV":"NM","gunOwnership":"0.499","Pop":"2096034"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd3c"},"State":"Alabama","State_ABV":"AL","gunOwnership":"0.489","Pop":"4898246"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd3d"},"State":"North Dakota","State_ABV":"ND","gunOwnership":"0.479","Pop":"760900"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd3e"},"State":"Hawaii","State_ABV":"HI","gunOwnership":"0.451","Pop":"1416589"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd3f"},"State":"Louisiana","State_ABV":"LA","gunOwnership":"0.445","Pop":"4652581"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd40"},"State":"South Carolina","State_ABV":"SC","gunOwnership":"0.444","Pop":"5147111"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd41"},"State":"Mississippi","State_ABV":"MS","gunOwnership":"0.428","Pop":"2987895"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd42"},"State":"Kentucky","State_ABV":"KY","gunOwnership":"0.424","Pop":"4484047"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd43"},"State":"Tennessee","State_ABV":"TN","gunOwnership":"0.394","Pop":"6833793"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd44"},"State":"Nevada","State_ABV":"NV","gunOwnership":"0.375","Pop":"3087025"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd45"},"State":"Minnesota","State_ABV":"MN","gunOwnership":"0.367","Pop":"5655925"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd46"},"State":"Texas","State_ABV":"TX","gunOwnership":"0.357","Pop":"29087070"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd47"},"State":"South Dakota","State_ABV":"SD","gunOwnership":"0.35","Pop":"892631"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd48"},"State":"Wisconsin","State_ABV":"WI","gunOwnership":"0.347","Pop":"5832661"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd49"},"State":"Colorado","State_ABV":"CO","gunOwnership":"0.343","Pop":"5770545"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd4a"},"State":"Iowa","State_ABV":"IA","gunOwnership":"0.338","Pop":"3167997"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd4b"},"State":"Indiana","State_ABV":"IN","gunOwnership":"0.338","Pop":"6718616"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd4c"},"State":"Florida","State_ABV":"FL","gunOwnership":"0.325","Pop":"21646155"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd4d"},"State":"Arizona","State_ABV":"AZ","gunOwnership":"0.323","Pop":"7275070"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd4e"},"State":"Kansas","State_ABV":"KS","gunOwnership":"0.322","Pop":"2910931"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd4f"},"State":"Utah","State_ABV":"UT","gunOwnership":"0.319","Pop":"3221610"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd50"},"State":"Georgia","State_ABV":"GA","gunOwnership":"0.316","Pop":"10627767"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd51"},"State":"Oklahoma","State_ABV":"OK","gunOwnership":"0.312","Pop":"3948950"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd52"},"State":"Virginia","State_ABV":"VA","gunOwnership":"0.293","Pop":"8571946"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd53"},"State":"Vermont","State_ABV":"VT","gunOwnership":"0.288","Pop":"627180"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd54"},"State":"Michigan","State_ABV":"MI","gunOwnership":"0.288","Pop":"10020472"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd55"},"State":"North Carolina","State_ABV":"NC","gunOwnership":"0.287","Pop":"10497741"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd56"},"State":"Washington","State_ABV":"WA","gunOwnership":"0.277","Pop":"7666343"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd57"},"State":"Missouri","State_ABV":"MO","gunOwnership":"0.271","Pop":"6147861"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd58"},"State":"Pennsylvania","State_ABV":"PA","gunOwnership":"0.271","Pop":"12813969"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd59"},"State":"Oregon","State_ABV":"OR","gunOwnership":"0.266","Pop":"4245901"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd5a"},"State":"Illinois","State_ABV":"IL","gunOwnership":"0.262","Pop":"12700381"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd5b"},"State":"Maine","State_ABV":"ME","gunOwnership":"0.226","Pop":"1342097"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd5c"},"State":"Massachusetts","State_ABV":"MA","gunOwnership":"0.226","Pop":"6939373"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd5d"},"State":"Maryland","State_ABV":"MD","gunOwnership":"0.207","Pop":"6062917"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd5e"},"State":"California","State_ABV":"CA","gunOwnership":"0.201","Pop":"39747267"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd5f"},"State":"Nebraska","State_ABV":"NE","gunOwnership":"0.198","Pop":"1940919"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd60"},"State":"Ohio","State_ABV":"OH","gunOwnership":"0.196","Pop":"11718568"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd61"},"State":"Connecticut","State_ABV":"CT","gunOwnership":"0.166","Pop":"3567871"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd62"},"State":"New Hampshire","State_ABV":"NH","gunOwnership":"0.144","Pop":"1363852"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd63"},"State":"New Jersey","State_ABV":"NJ","gunOwnership":"0.113","Pop":"8922547"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd64"},"State":"New York","State_ABV":"NY","gunOwnership":"0.103","Pop":"19491339"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd65"},"State":"Rhode Island","State_ABV":"RI","gunOwnership":"0.058","Pop":"1056738"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd66"},"State":"Delaware","State_ABV":"DE","gunOwnership":"0.052","Pop":"975033"}
+{"_id":{"$oid":"5d7b002b556b2c239c06bd67"},"State":"","State_ABV":null,"gunOwnership":null,"Pop":null}
