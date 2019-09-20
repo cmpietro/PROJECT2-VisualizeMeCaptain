@@ -58,8 +58,8 @@ d3.json(stateoutline, function(data) {
     // Add min & max
     var legendInfo = "<h3>Number of registered weapons</h3>" +
       "<div class=\"labels\">" +
-        "<div class=\"min\">" + limits[0] + "</div>" +
-        "<div class=\"max\">" + limits[limits.length - 1] + "</div>" +
+        "<div class=\"min\">" + limits[limits.length - 1] + "</div>" +
+        "<div class=\"max\">" + limits[0] + "</div>" +
       "</div>";
 
     div.innerHTML = legendInfo;
