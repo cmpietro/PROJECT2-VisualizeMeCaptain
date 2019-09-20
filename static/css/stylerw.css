@@ -116,32 +116,33 @@ footer {
   /* border-radius: 8px; */
   pointer-events: none;
 }
+/* Custom CSS*/
 
-.tooltipShooting {
-  position: absolute;
-  text-align: left;
-  color: white;
-  width: auto;
-  height: 75px;
-  padding: 8px;
-  font: 0.75em sans-serif;
-  background: #7F2626;
-  border: 0px;
-  /* border-radius: 8px; */
-  pointer-events: none;
+.legend {
+color: #555;
+padding: 6px 8px;
+font: 12px Arial, Helvetica, sans-serif;
+font-weight: bold;
+background: white;
+box-shadow: 0 0 15px rgba(0,0,0,0.2);
+border-radius: 5px;
 }
-
-/* Styles for map legend items */
-.dot {
-  height: 20px;
-  width: 20px;
-  border: 1px solid black;
-  background-color: red;
-  border-radius: 50%;
-  display: inline-block;
-  opacity: 0.7;
+.legend ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+clear: both;
 }
-.legendNote{
-  font: 0.6em sans-serif;
+.legend li {
+display: inline-block;
+width: 30px;
+height: 22px;
+opacity: 0.7;
 }
-
+.legend .min {
+float: left;
+padding-bottom: 5px;
+}
+.legend .max {
+float: right;
+}

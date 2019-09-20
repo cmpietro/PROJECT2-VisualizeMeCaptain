@@ -25,6 +25,8 @@ d3.json(stateoutline, function(data) {
 
     // Define what  property in the features to use
     valueProperty: "gunOwnership",
+  
+    
 
     // Set color scale
     scale: ["#ffffb2", "#b10026"],
@@ -49,26 +51,26 @@ d3.json(stateoutline, function(data) {
 
   // Set up the legend
   var legend = L.control({ position: "bottomright" });
-  legend.onAdd = function() {
+  legend.onAdd = function(map) {
     var div = L.DomUtil.create("div", "info legend");
     var limits = geojson.options.limits;
     var colors = geojson.options.colors;
     var labels = [];
 
     // Add min & max
-    var legendInfo = "<h1>Gun Ownership</h1>" +
+    var legendInfo = "<h3>Gun Ownership Density</h3>" +
       "<div class=\"labels\">" +
         "<div class=\"min\">" + limits[0] + "</div>" +
         "<div class=\"max\">" + limits[limits.length - 1] + "</div>" +
       "</div>";
 
     div.innerHTML = legendInfo;
-
+       
     limits.forEach(function(limit, index) {
       labels.push("<li style=\"background-color: " + colors[index] + "\"></li>");
     });
 
-    div.innerHTML += "<ul>" + labels.join("") + "</ul>";
+    div.innerHTML += '<ul style="list-style-type:none;display:flex">' + labels.join("") + "</ul>";
     return div;
   };
 
