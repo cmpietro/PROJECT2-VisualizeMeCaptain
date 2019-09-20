@@ -58,8 +58,8 @@ d3.json(stateoutline, function(data) {
     // Add min & max
      var legendInfo = "<h3>Mass Shooting Victims</h3>" +
         "<div class=\"labels\">" +
-        "<div class=\"min\">" + limits[0] + "</div>" +
-        "<div class=\"max\">" + limits[limits.length - 1] + "</div>" +
+        "<div class=\"min\"> 6 </div>" +
+        "<div class=\"max\"> 616 </div>" +
         "</div>";
   
     
