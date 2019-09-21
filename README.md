@@ -2,15 +2,34 @@
 
 PROJECT OUTLINE:  Visualize Gun Violence in FOUR views.
 
-1. FOUR Introductory statements - with instructions for use of application in at least ONE OF THEM
-2. FOUR LAYERS - on an interactive map MORTALITY, MASS SHOOTINGS, CRIMES, GUN OWNERSHIP.
-3. FOUR STATIC VIEWS:  GUN MANUFACTORING, HIGHLIGHTS FROM THE MAP, OTHER AND OTHER
-4. FOUR Live updates from News regarding gun violence.
-5. FOUR SUMMARIES:  Each participant will make a final statement
+To view this please use the python - m http.server to view the INDEX.HTML site and explore the data. 
+
+FILES USED:  
+ian.html
+ian2.html
+index.html (MAIN WEB PAGE)
+mj.html
+oc.html
+PROJECT-2-VISUALIZEME.xlsx
+readme.md
+rw.html
+
+STATIC: 
+CONFIG:
+CSS:
+JS:
+
+OLD data contained within the ARCHIVED folder. 
+
+1. FOUR Introductory statements - 
+2. FOUR MAIN MAP with an additional - on an interactive map GUN OWNERSHIP, Mass Shootings by state and Mass Shootings with Details, FBI Weapons offenses by state and Registered weapons by state.
+3. FOUR STATIC VIEWS:  Other web sites views.
+4. FOUR SUMMARIES:  Each participant will make a final statement
+5. References used. 
 
 TO VIEW PROJECT PLAN:  Please view the PROJECT on Github
 Additional documentation is located in the Excel known as PROJECT - 2 VISUALIZEME.
-visuals located in the sketches folder as well as the excel documentation
-STORY BOARD LOCATED HERE:  https://carolpietro919989.invisionapp.com/board/Visualize-Me---ck05b3sfo0c7d0stms423mw2r?v=ozc%2BIKkshSKk6%2BJ8GDUZuw%3D%3D&linkshare=urlcopied
+
+
 
 
