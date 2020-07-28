@@ -12,10 +12,9 @@ Babel==2.6.0
 backcall==0.1.0
 backports.os==0.1.1
 backports.shutil-get-terminal-size==1.0.0
-beautifulsoup4==4.7.1
+beautifulsoup4==4.7.1https://github.com/cmpietro/PROJECT2-VisualizeMeCaptain/security
 bitarray==0.8.3
 bkcharts==0.2
-bleach==3.1.0
 bokeh==1.0.4
 boto==2.49.0
 Bottleneck==1.2.1
